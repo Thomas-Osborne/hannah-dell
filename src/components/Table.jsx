@@ -35,17 +35,17 @@ export default function Table(props) {
             {colGroup && <colgroup>{colGroup}</colgroup>}
             <tbody>{displayedContent}</tbody>
           </table>
+          {props.isCollapsible && props.content.length > 3 && <div className="table-button-container">
+            <button 
+              className="table-button"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              See {isOpen ? "Less" : "More"}...
+            </button>
+          </div>}
         </div>
-        {props.isCollapsible && props.content.length > 3 && <div className="table-button-container">
-          <button 
-            className="table-button"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            See {isOpen ? "Less" : "More"}...
-          </button>
-        </div>}
       </div>
-    )};
+    )}
     </>
   )
 };
