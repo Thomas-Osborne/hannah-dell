@@ -207,7 +207,6 @@ table {
 
 table td, table th {
   padding: 8px 20px;
-  font-size: 0.9rem;
 }
 
 table tr:nth-child(odd) {
@@ -258,7 +257,6 @@ table tr:nth-child(even) {
 }
 
 .article-heading {
-  font-size: 1.125rem;
   padding-left: 10px;
   
 }
