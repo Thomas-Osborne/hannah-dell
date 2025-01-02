@@ -20,7 +20,7 @@
     "shortName": "Talks",
     "path": "talks",
     "content": {
-      "html": "<div>\n <img src=\"/hannah-dell/assets/triangulatedcat.jpg\" /> <p>\n <a href=\"https://vimeo.com/926362990/\">Here</a> is a recording of a talk about my thesis project that I give at MSRI in March 2024.</p> <p> <a href=\"https://www.youtube.com/watch?v=JWhMr3MmTvg&list=PLArBKNfJxuumdJkEHO8lYsCOtmJS-FruR&index=10/\">Here</a> is a recording of a 5-minute talk about my cyclic covers project at the Fields Institute.</p></div>",
+      "html": "<div>\n <img src=\"/assets/triangulatedcat.jpg\" /> <p>\n <a href=\"https://vimeo.com/926362990/\">Here</a> is a recording of a talk about my thesis project that I give at MSRI in March 2024.</p> <p> <a href=\"https://www.youtube.com/watch?v=JWhMr3MmTvg&list=PLArBKNfJxuumdJkEHO8lYsCOtmJS-FruR&index=10/\">Here</a> is a recording of a 5-minute talk about my cyclic covers project at the Fields Institute.</p></div>",
       "image": {
         "path": "",
         "altText": ""
