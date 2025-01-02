@@ -37,8 +37,19 @@ export default function TalksTable(props) {
 
   return (
     props.pinnedOnly
-      ? <Table content={generateTableRows(newData, false)} heading={props.heading} />
+      ? <Table 
+          content={generateTableRows(newData, false)} 
+          heading={props.heading}
+          isCollapsible={props.isCollapsible}
+        />
       : 
-        splitByName(newData, "name").map((itemGroup, index) => <Table key={index} content={generateTableRows(itemGroup, true)} heading={itemGroup[0].name} />)
-  )
+        splitByName(newData, "name").map((itemGroup, index) =>
+          <Table 
+            key={index} 
+            content={generateTableRows(itemGroup, true)} 
+            heading={itemGroup[0].name}
+            isCollapsible={props.isCollapsible}
+          />
+        )
+  );
 }

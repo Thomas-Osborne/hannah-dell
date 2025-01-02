@@ -6,7 +6,7 @@ export default function Teaching(props) {
   return (
     <>
       <Intro name={props.name} />
-      <TeachingTable pinnedOnly={false}/>
+      <TeachingTable pinnedOnly={false} isCollapsible={false}/>
     </>
   )
 }

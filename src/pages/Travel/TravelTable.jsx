@@ -30,6 +30,8 @@ export default function TravelTable(props) {
   });
 
   return (
-    <Table content={tableRows} heading={props.heading} />
+    <Table 
+      content={tableRows} heading={props.heading} isCollapsible={false}
+    />
   )
 }

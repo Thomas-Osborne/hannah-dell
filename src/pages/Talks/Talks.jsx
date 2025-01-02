@@ -6,7 +6,7 @@ export default function Talks(props) {
   return (
     <>
       <Intro name={props.name} />
-      <TalksTable pinnedOnly={false}/>
+      <TalksTable pinnedOnly={false} isCollapsible={true}/>
     </>
   )
 }
