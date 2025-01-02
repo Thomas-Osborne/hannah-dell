@@ -74,11 +74,27 @@ body a:hover {
 }
 
 .page-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: block;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.page-content img {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.page-content .img-me {
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  vertical-align: middle;
 }
 
 li {
@@ -134,7 +150,6 @@ nav a:hover {
   display: none;
 }
 
-
 .hamburger-container {
   display: flex;
   align-items: center;
@@ -177,22 +192,6 @@ nav a:hover {
   max-height: 0;
   opacity: 0;
 } */
-
-img {
-  display: block;
-  width: 50%;
-  max-height: 10px;
-}
-
-.img-me {
-  float: right;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  vertical-align: middle;
-}
 
 .table-container {
   display: block;
