@@ -19,11 +19,10 @@ export default function Navbar() {
   const headingNames = (
     <ul className={`nav-headings ${isHamburgerOpen ? "nav-headings-open-hamburger" : "nav-headings-closed-hamburger"}`}>
       {navbarHeadings.map(heading => (
-        <li key={heading.id}>
+        <li key={heading.id} className="navbar-link-item">
           <Link 
             to={`${heading.path.toLowerCase()}`}
             alt={heading.name}
-            className="navbar-link"
           >
             {heading.shortName}
           </Link>

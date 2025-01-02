@@ -17,7 +17,7 @@ export default function Hero(props) {
   return (
     pageData && <div className="hero">
       <div className="body-container">
-        <h1>{pageData.name}</h1>
+        <h1 className="hero-heading">{pageData.name}</h1>
       </div>
     </div>
   )
