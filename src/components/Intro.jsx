@@ -36,7 +36,7 @@ export default function Intro(props) {
     document && 
       <MathJaxContext>
         <div
-          className="flex items-center justify-start body-container pt-4"
+          className="page-content body-container"
           dangerouslySetInnerHTML={{ __html: insertImageInFirstContentElement() }} // note data must come from safe source
         />
       </MathJaxContext>

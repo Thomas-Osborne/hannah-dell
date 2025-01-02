@@ -17,12 +17,11 @@ export default function Navbar() {
   const navbarHeadings = data.filter(page => (page.isOnNavbar))
 
   const headingNames = (
-    <ul className={`sm:flex ${isHamburgerOpen ? "block" : "hidden"}`}>
+    <ul className={`nav-headings ${isHamburgerOpen ? "nav-headings-open-hamburger" : "nav-headings-closed-hamburger"}`}>
       {navbarHeadings.map(heading => (
-        <li key={heading.id} className="pr-4 py-2">
+        <li key={heading.id}>
           <Link 
             to={`${heading.path.toLowerCase()}`}
-            className="text-headingYellow no-underline hover:text-hoverYellow transition duration-300"
             alt={heading.name}
           >
             {heading.shortName}
@@ -33,39 +32,38 @@ export default function Navbar() {
   )
 
   return (
-    <nav className="w-full bg-navbarBackground shadow-md py-2">
-      <div className="body-container mx-auto flex items-center justify-between sm:justify-start">
+    <nav>
+      <div className="body-container nav-content">
           <Link
             to="/"
-            className="text-xl text-headingYellow no-underline hover:text-hoverYellow transition duration-300 pr-4 py-2"
+            className="navbar-homename"
             alt="Home"
           >
             {homeName}
           </Link>
 
         {/* Hamburger */}
-        <div className="sm:hidden flex items-center">
+        <div className="hamburger-container">
           <button 
-            className="text-headingYellow hover:text-hoverYellow transition duration-300"
+            className="hamburger-button"
             onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
             alt="Open Navbar"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="hamburger">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
 
         {/* Headings without hamburger */}
-        <div className="hidden sm:block">
+        <div className="headings-without-hamburger">
           {headingNames}
         </div>
       </div>
 
       {/* Headings with hamburger */}
       <div
-        className={`body-container sm:hidden overflow-hidden transition-all duration-500 ease-in-out ${isHamburgerOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`headings-with-hamburger body-container ${isHamburgerOpen ? "hamburger-open" : "hamburger-closed"}`}
       >
         {headingNames}
       </div>
