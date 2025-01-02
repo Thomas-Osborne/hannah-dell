@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
@@ -29,7 +29,7 @@ export default function App() {
   }, {});
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Hero homePath={`${specialPages.home.path}`}/>
       <Routes>
@@ -124,6 +124,6 @@ export default function App() {
 
         <Route path="*" element={<NotFound /> }/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
