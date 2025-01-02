@@ -1,6 +1,164 @@
 [
   {
     "name": "Stability conditions on free abelian quotients",
+    "date": "2024-11-22",
+    "seminarName": "Category Theory Seminar",
+    "seminarUrl": "https://hodge.maths.ed.ac.uk/?page_id=36",
+    "location": "Edinburgh",
+    "id": 35
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-08-07",
+    "seminarName": "Mirrors in the Midlands 2024",
+    "seminarUrl": "https://sites.google.com/view/tylerkelly/past-conferences/mirrors-in-the-midlands-2024",
+    "location": "Birmingham",
+    "id": 34
+  },
+  {
+    "name": "Rising Sea Chapter 8: Useful classes of morphisms of schemes",
+    "date": "2023-05-01",
+    "seminarName": "Eisenboaties Reading Group",
+    "location": "Edinburgh",
+    "id": 33
+  },
+  {
+    "name": "Eisenbud Chapter 8: Dimension Theory",
+    "date": "2023-02-10",
+    "seminarName": "Eisenbuddies Reading Group",
+    "location": "Edinburgh",
+    "id": 32
+  },
+  {
+    "name": "Categorical Torelli for cyclic covers",
+    "date": "2024-06-18",
+    "seminarName": "Spec(Q¯(2πi))",
+    "seminarUrl": "http://www.fields.utoronto.ca/activities/23-24/SpecQ",
+    "location": "Toronto",
+    "id": 31
+  },
+  {
+    "name": "Stability and moduli on curves and quivers",
+    "date": "2024-01-23",
+    "seminarName": "Fano and Hyperkähler Varieties",
+    "seminarUrl": "https://sites.google.com/view/fanohkingenova/",
+    "location": "Genova",
+    "id": 30
+  },
+  {
+    "name": "Categorical Torelli for cyclic covers",
+    "date": "2024-10-28",
+    "seminarName": "Tale of Geometries Workshop",
+    "seminarUrl": "https://tale-of-geometries.github.io",
+    "location": "Bruxelles",
+    "pinned": true,
+    "id": 29
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-11-25",
+    "seminarName": "Oberseminar Algebraische und Komplexe Geometrie",
+    "location": "Bochum",
+    "id": 28
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-11-07",
+    "seminarName": "Seminar Algebraic Geometry",
+    "seminarUrl": "https://www.mpim-bonn.mpg.de/node/5285",
+    "location": "Bonn",
+    "id": 27
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-09-12",
+    "seminarName": "Workshop on DT Theory and Derived Categories",
+    "seminarUrl": "https://sites.google.com/view/dtcats24/",
+    "location": "Paris",
+    "id": 26
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-05-16",
+    "seminarName": "Complex AG seminar",
+    "seminarUrl": "https://sites.unimi.it/geoalg/seminars.html",
+    "location": "Milano",
+    "id": 25
+  },
+  {
+    "name": "Demystifying Bridgeland stability conditions",
+    "date": "2023-11-28",
+    "seminarName": "DOGS Seminar",
+    "seminarUrl": "https://dogs-seminar.github.io/",
+    "location": "Online",
+    "id": 24
+  },
+  {
+    "name": "An etymological tour through mathematics",
+    "date": "2023-11-17",
+    "seminarName": "Hodge Club",
+    "seminarUrl": "https://hodge.maths.ed.ac.uk/?page_id=38",
+    "location": "Edinburgh",
+    "id": 23
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-05-01",
+    "seminarName": "EDGE Geometry Seminar",
+    "seminarUrl": "https://hodge.maths.ed.ac.uk/?page_id=36",
+    "location": "Edinburgh",
+    "id": 22
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-03-21",
+    "seminarName": "NAG Equivariant Derived Categories Seminar",
+    "seminarUrl": "https://www.slmath.org/programs/356#colloquia_seminars_programs",
+    "location": "Berkeley",
+    "id": 21
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-03-19",
+    "seminarName": "Wayne State Algebra Seminar",
+    "seminarUrl": "https://events.wayne.edu/main/2024/03/19/mathematics-algebra-seminar-hannah-dell-98894/",
+    "location": "Detroit",
+    "id": 20
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-02-19",
+    "seminarName": "Geometry and Physics Seminar",
+    "seminarUrl": "https://agmp.sites.sheffield.ac.uk/seminars/past-seminars/the-sheffield-geometry-and-physics-seminar-202324",
+    "location": "Sheffield",
+    "id": 19
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-02-07",
+    "seminarName": "AG seminar",
+    "seminarUrl": "https://pbelmans.ncag.info/uni.lu/seminar",
+    "location": "Luxembourg",
+    "id": 18
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2024-02-02",
+    "seminarName": "Mini-Workshop: Artin Groups meet Triangulated Categories",
+    "seminarUrl": "https://publications.mfo.de/bitstream/handle/mfo/4112/OWR_2024_04.pdf?sequence=4",
+    "location": "Oberwolfach",
+    "id": 17
+  },
+  {
+    "name": "Stability conditions on free abelian quotients",
+    "date": "2023-11-09",
+    "seminarName": "Algebra, Geometry, and Number Theory Seminar",
+    "seminarUrl": "https://people.bath.ac.uk/masadk/seminar/geom/",
+    "location": "Bath",
+    "id": 16
+  },
+  {
+    "name": "Stability conditions on free abelian quotients",
     "date": "2023-10-01",
     "seminarName": "Quantum Mechanics Research Seminar",
     "seminarUrl": "https://www.sdu.dk/en/forskning/qm/events",
@@ -65,7 +223,7 @@
     "id": 7
   },
   {
-    "name": "Geometric stability conditions on quotients",
+    "name": "Stability conditions on free abelian quotients",
     "notes": "glasgow_-_geometric_stability_talk.pdf",
     "date": "2022-12-01",
     "seminarName": "Workshop on Singularities and Mirror Symmetry",
@@ -74,7 +232,7 @@
     "id": 8
   },
   {
-    "name": "Bridgeland stability manifolds via group actions",
+    "name": "Stability conditions on free abelian quotients",
     "date": "2022-07-01",
     "seminarName": "Hodge Club",
     "seminarUrl": "https://hodge.maths.ed.ac.uk/?page_id=38",
@@ -91,17 +249,16 @@
     "id": 10
   },
   {
-    "name": "Stability conditions on Beauville-type surfaces",
+    "name": "Stability conditions on free abelian quotients",
     "notes": "stability_on_beauville-type_surfaces_talk_notes.svg",
     "date": "2021-11-01",
     "seminarName": "Derived Work in Progress",
     "seminarUrl": "https://hodge.maths.ed.ac.uk/?page_id=216",
     "location": "Edinburgh/Online",
-    "pinned": true,
     "id": 11
   },
   {
-    "name": "Stability Manifolds of Varieties with Finite Albanese Morphism",
+    "name": "Stability Manifolds of Varieties with Finite Albanese Morphisms",
     "notes": "Stability_Manifolds_of_Varieties_with_Finite_Albanese_Morphisms.pdf",
     "date": "2021-06-01",
     "seminarName": "Internal Working Seminar",
@@ -124,7 +281,6 @@
     "seminarName": "GIaMS Examples Seminar",
     "seminarUrl": "https://www.glams.org/2020-cohort/examples-seminar",
     "location": "Online",
-    "pinned": true,
     "id": 14
   },
   {
