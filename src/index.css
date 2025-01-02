@@ -198,7 +198,7 @@ nav a:hover {
 .hamburger-closed {
   max-height: 0;
   opacity: 0;
-} */
+}
 
 table {
   width: 100%;
@@ -232,7 +232,6 @@ table tr:nth-child(even) {
   width: 100%;
   padding: 10px 0;
 }
-
 
 .article-container {
   width: 100%;
