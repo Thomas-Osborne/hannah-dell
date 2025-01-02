@@ -13,11 +13,12 @@ export default function TalksTable(props) {
         {!isHeading && 
           <td>
             {item.notes 
-              ? item.name 
-              : 
+              ?                 
                 <>
                   {item.name} (<a href={`/notes/${item.notes}`} target="_blank" rel="noopener noreferrer">notes</a>)
-                </>
+                </> 
+              : 
+                item.name
             }
           </td>
         }
@@ -28,6 +29,7 @@ export default function TalksTable(props) {
             item.seminarName
           )}
         </td>
+        {isHeading && <td><a href={`/notes/${item.notes}`} target="_blank" rel="noopener noreferrer">Notes</a></td>}
         <td>
           {new Date(item.date).toLocaleString("en-GB", { year: "numeric", month: "long" })}
         </td>
@@ -53,7 +55,7 @@ export default function TalksTable(props) {
             content={generateTableRows(itemGroup, true)} 
             heading={itemGroup[0].name}
             isCollapsible={props.isCollapsible}
-            tableProportions={[50, 20, 20, 10]}
+            tableProportions={[70, 5, 15, 10]}
           />
         )
   );
