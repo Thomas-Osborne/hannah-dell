@@ -29,7 +29,7 @@ export default function App() {
   }, {});
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.PROD ? import.meta.env.BASE_URL : ""}>
       <Navbar />
       <Hero homePath={`${specialPages.home.path}`}/>
       <Routes>
