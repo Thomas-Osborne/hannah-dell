@@ -207,6 +207,7 @@ table {
 
 table td, table th {
   padding: 8px 20px;
+  font-size: 0.9rem;
 }
 
 table tr:nth-child(odd) {
@@ -217,8 +218,9 @@ table tr:nth-child(even) {
   background-color: #ffffff;
 }
 
-.table-title {
-  margin-bottom: 20px;
+.table-title, .article-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .table-button {
