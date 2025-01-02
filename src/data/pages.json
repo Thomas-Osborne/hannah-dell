@@ -20,7 +20,7 @@
     "shortName": "Talks",
     "path": "talks",
     "content": {
-      "html": "<div>\n    <p>\n    I am a postdoc in the <a href=\"https://www.math.uni-bonn.de/\">Mathematical Institute at the University of Bonn</a>, in the working group of <a href=\"https://www.math.uni-bonn.de/~huybrech/\">Daniel Huybrechts</a>. I&#39;m funded by the ERC synergy grant <a href=\"https://www.erc-hyperk.org/\">HyperK</a>.\n    </p>\n\n    <p>I did my PhD at the University of Edinburgh under the supervision of <a href=\"https://www.maths.ed.ac.uk/~abayer/\">Arend Bayer</a>.</p>\n\n    <p><strong>Email:</strong> hdell (at) math (dot) uni-bonn (dot) de</p>\n\n    <p><strong>Address:</strong> Raum 3.003, Endenicher Allee 60, 53115 Bonn</p>\n\n    <p><strong>Pronouns:</strong> she/they</p>\n\n    <h3>Research Interests</h3>\n\n    <p>I am interested in algebraic geometry, in particular derived categories of coherent sheaves, Bridgeland stability conditions, and group actions (on varieties and categories).</p>\n  </div>",
+      "html": "<div>\n <img src=\"/assets/triangulatedcat.jpg\" /> <p>\n <a href=\"https://vimeo.com/926362990/\">Here</a> is a recording of a talk about my thesis project that I give at MSRI in March 2024.</p> <p> <a href=\"https://www.youtube.com/watch?v=JWhMr3MmTvg&list=PLArBKNfJxuumdJkEHO8lYsCOtmJS-FruR&index=10/\">Here</a> is a recording of a 5-minute talk about my cyclic covers project at the Fields Institute.</p></div>",
       "image": {
         "path": "",
         "altText": ""
