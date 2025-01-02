@@ -39,6 +39,7 @@ export default function TeachingTable(props) {
           content={generateTableRows(newData, false)} 
           heading={props.heading}
           isCollapsible={props.isCollapsible}
+          tableProportions={[60, 20, 20]}
         />
       : 
         splitByName(newData, "location").map((itemGroup, index) => 
@@ -47,6 +48,7 @@ export default function TeachingTable(props) {
             content={generateTableRows(itemGroup, true)}
             heading={itemGroup[0].location}
             isCollapsible={props.isCollapsible}
+            tableProportions={[65, 35]}
           />
         )
   )

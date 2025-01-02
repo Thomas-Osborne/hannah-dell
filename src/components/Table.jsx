@@ -16,6 +16,12 @@ export default function Table(props) {
     }
   }
 
+  const colGroup = props.tableProportions
+  ? props.tableProportions.map((width, index) => (
+      <col key={index} style={{ width: `${width}%` }} />
+    ))
+  : null;
+
 
   return (
     <>
@@ -23,10 +29,11 @@ export default function Table(props) {
       <div className="body-container">
         <div className="table-container">
           {props.heading && <h2 className="table-title">{props.heading}</h2>}
-          <table>
-            <tbody>
-              {displayedContent}
-            </tbody>
+          <table 
+            className="table" 
+          >
+            {colGroup && <colgroup>{colGroup}</colgroup>}
+            <tbody>{displayedContent}</tbody>
           </table>
         </div>
         {props.isCollapsible && props.content.length > 3 && <div className="table-button-container">

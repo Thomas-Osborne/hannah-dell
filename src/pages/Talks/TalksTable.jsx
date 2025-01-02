@@ -12,7 +12,13 @@ export default function TalksTable(props) {
       <tr key={item.id}>
         {!isHeading && 
           <td>
-            {item.name}
+            {item.notes 
+              ? item.name 
+              : 
+                <>
+                  {item.name} (<a href={`/notes/${item.notes}`} target="_blank" rel="noopener noreferrer">notes</a>)
+                </>
+            }
           </td>
         }
         <td>
@@ -28,9 +34,6 @@ export default function TalksTable(props) {
         <td>
           {item.location}
         </td>
-        <td>
-          {item.notes && <a href={`/notes/${item.notes}`} target="_blank" rel="noopener noreferrer">Notes</a>}
-        </td>
       </tr>
     )
   })
@@ -41,6 +44,7 @@ export default function TalksTable(props) {
           content={generateTableRows(newData, false)} 
           heading={props.heading}
           isCollapsible={props.isCollapsible}
+          tableProportions={[30, 30, 20, 20]}
         />
       : 
         splitByName(newData, "name").map((itemGroup, index) =>
@@ -49,6 +53,7 @@ export default function TalksTable(props) {
             content={generateTableRows(itemGroup, true)} 
             heading={itemGroup[0].name}
             isCollapsible={props.isCollapsible}
+            tableProportions={[50, 20, 20, 10]}
           />
         )
   );

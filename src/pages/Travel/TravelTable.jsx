@@ -32,6 +32,7 @@ export default function TravelTable(props) {
   return (
     <Table 
       content={tableRows} heading={props.heading} isCollapsible={false}
+      tableProportions={[60, 20, 20]}
     />
   )
 }
