@@ -17,7 +17,6 @@ html, body {
 .body-container {
   margin: 0 auto;
   padding: 0 10px;
-  border: 1px solid red;
 }
 
 body h1, h2, h3, h4, h5, h6 {
@@ -105,7 +104,6 @@ nav a {
   color: #ffc233;
   text-decoration: none;
   transition: all 300ms ease-in-out;
-  border: 1px solid blue;
 }
 
 nav a:hover {
@@ -114,12 +112,12 @@ nav a:hover {
 
 .navbar-homename {
   font-size: 1.375rem;
-  border: 1px solid red;
   padding-right: 1rem;
 }
 
 .navbar-link {
-  padding: 0 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .nav-content {
@@ -162,10 +160,12 @@ nav a:hover {
   transition: all 500ms ease-in-out;
   overflow: hidden;
   padding: 0;
+  margin-left: -20px;
 }
 
 .headings-without-hamburger {
   display: none;
+  margin-left: -20px;
 }
 
 .hamburger-open {
@@ -307,6 +307,10 @@ table tr:nth-child(even) {
 @media (min-width: 640px) {
   .nav-content {
     justify-content: flex-start;
+  }
+
+  .navbar-link {
+    padding: 0.5rem;
   }
 
   .hamburger-container {
