@@ -23,6 +23,7 @@ export default function Navbar() {
           <Link 
             to={`${heading.path.toLowerCase()}`}
             alt={heading.name}
+            className="navbar-link"
           >
             {heading.shortName}
           </Link>
