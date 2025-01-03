@@ -31,14 +31,14 @@ export default function Article(props) {
               <h3 className="article-heading">{props.item.name}</h3>
             </div>
             <div className="article-links">
-              {props.item.arxiv && (<a className="article-link" href={props.item.arxiv} target="_blank" rel="noopener noreferrer">(arXiv)</a>)}
-              {props.item.pdf && (<a className="article-link" href={`/papers/${props.item.pdf}`} target="_blank" rel="noopener noreferrer">(PDF)</a>)}
+              {props.item.arxiv && (<a className="article-link" href={props.item.arxiv} target="_blank">(arXiv)</a>)}
+              {props.item.pdf && (<a className="article-link" href={`/papers/${props.item.pdf}`} target="_blank">(PDF)</a>)}
             </div>
           </div>
           <div className="article-journal">
             {props.item.journalStatus && 
               props.item.journalUrl 
-                ? <h5><em><a className="article-link" href={props.item.journalUrl} target="_blank" rel="noopener noreferrer">{props.item.journalStatus}</a></em></h5> 
+                ? <h5><em><a className="article-link" href={props.item.journalUrl} target="_blank">{props.item.journalStatus}</a></em></h5> 
                 : <h5><em>{props.item.journalStatus}</em></h5>
             }
             {props.item.showYear && <span className="article-detail">({new Date(props.item.date).toLocaleString("en-GB", { year: "numeric" })})</span>}

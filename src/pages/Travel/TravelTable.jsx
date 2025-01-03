@@ -13,7 +13,7 @@ export default function TravelTable(props) {
         <td>
           {item.url ? (
             <>
-              <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
+              <a href={item.url} target="_blank">{item.name}</a>
             </>
           ) : (
             item.name
