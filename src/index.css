@@ -267,12 +267,12 @@ table tr:nth-child(even) {
   margin: 0;
 }
 
-.article-links-unpinned {
-  padding-left: 10px;
+.article-links-pinned {
+  padding-left: 50px;
 }
 
-.article-links-pinned {
-  padding-left: 58px;
+.article-links-unpinned {
+  padding-left: 10px;
 }
 
 .article-info span, .article-info a {
@@ -317,7 +317,6 @@ table tr:nth-child(even) {
 }
 
 .article-toggle {
-  min-width: 40px;
   background-color: #212529;
   font-size: 28px;
   border-radius: 16px;
