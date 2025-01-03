@@ -296,6 +296,7 @@ table tr:nth-child(even) {
 
 .article-abstract-container {
   padding: 2px 2px 0 2px;
+} 
 
 .article-detail {
   font-size: 0.8rem;
@@ -308,7 +309,6 @@ table tr:nth-child(even) {
 .article-abstract {
   margin: 0;
 }
-
 
 .article-journal {
   padding: 0 5px 0 10px;
