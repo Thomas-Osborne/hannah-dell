@@ -40,7 +40,7 @@ export default function Table(props) {
               className="table-button"
               onClick={() => setIsOpen(!isOpen)}
             >
-              Show {isOpen ? "Less" : "More"}...
+              Show {isOpen ? "less" : "more"}
             </button>
           </div>}
         </div>

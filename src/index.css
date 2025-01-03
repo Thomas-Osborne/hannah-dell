@@ -251,7 +251,7 @@ table tr:nth-child(even) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px 5px 0;
+  padding: 0;
 }
 
 .article-title-button {
