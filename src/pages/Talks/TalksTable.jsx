@@ -15,7 +15,7 @@ export default function TalksTable(props) {
             {item.notes 
               ?                 
                 <>
-                  {item.name} (<a href={`/notes/${item.notes}`} target="_blank" rel="noopener noreferrer">notes</a>)
+                  {item.name} (<a href={`/notes/${item.notes}`} target="_blank">notes</a>)
                 </> 
               : 
                 item.name
@@ -24,12 +24,12 @@ export default function TalksTable(props) {
         }
         <td>
           {item.seminarUrl ? (
-            <a href={item.seminarUrl} target="_blank" rel="noopener noreferrer">{item.seminarName}</a>
+            <a href={item.seminarUrl} target="_blank">{item.seminarName}</a>
           ) : (
             item.seminarName
           )}
         </td>
-        {isHeading && <td>{item.notes && <a href={`/notes/${item.notes}`} target="_blank" rel="noopener noreferrer">Notes</a>}</td>}
+        {isHeading && <td>{item.notes && <a href={`/notes/${item.notes}`} target="_blank">Notes</a>}</td>}
         <td>
           {new Date(item.date).toLocaleString("en-GB", { year: "numeric", month: "long" })}
         </td>
@@ -46,7 +46,7 @@ export default function TalksTable(props) {
           content={generateTableRows(newData, false)} 
           heading={props.heading}
           isCollapsible={props.isCollapsible}
-          tableProportions={[30, 30, 20, 20]}
+          tableProportions={[35, 25, 20, 20]}
         />
       : 
         splitByName(newData, "name").map((itemGroup, index) =>
