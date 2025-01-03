@@ -1,7 +1,7 @@
 [
   {
     "name": "Stability conditions on free abelian quotients",
-    "date": "2024-11-22",
+    "date": "2023-11-22",
     "seminarName": "Category Theory Seminar",
     "seminarUrl": "https://hodge.maths.ed.ac.uk/?page_id=36",
     "location": "Edinburgh",
@@ -47,6 +47,7 @@
   },
   {
     "name": "Categorical Torelli for cyclic covers",
+    "notes": "Categorical Torelli for cyclic covers printed.pdf",
     "date": "2024-10-28",
     "seminarName": "Tale of Geometries Workshop",
     "seminarUrl": "https://tale-of-geometries.github.io",
@@ -63,6 +64,7 @@
   },
   {
     "name": "Stability conditions on free quotients",
+    "notes": "SAG printed notes.pdf",
     "date": "2024-11-07",
     "seminarName": "Seminar Algebraic Geometry",
     "seminarUrl": "https://www.mpim-bonn.mpg.de/node/5285",
