@@ -260,12 +260,19 @@ table tr:nth-child(even) {
 }
 
 .article-heading {
-  padding-left: 10px;
-  
+  padding-left: 15px;
 }
 
 .article-links {
-  padding-right: 8px;
+  margin: 0;
+}
+
+.article-links-unpinned {
+  padding-left: 10px;
+}
+
+.article-links-pinned {
+  padding-left: 58px;
 }
 
 .article-info span, .article-info a {
@@ -287,7 +294,12 @@ table tr:nth-child(even) {
   justify-content: center;
 }
 
+.article-detail {
+  font-size: 0.8rem;
+}
+
 .article-abstract-container {
+  border: 1px solid red;
   padding: 2px;
 }
 
@@ -296,7 +308,8 @@ table tr:nth-child(even) {
 }
 
 .article-abstract {
-  margin: 2px 0;
+  border: 1px solid blue;
+  margin: 0;
 }
 
 
@@ -380,6 +393,11 @@ table tr:nth-child(even) {
     display: inline-flex;
     align-items: center;
   }
+
+  .article-links-unpinned, .article-links-pinned {
+    padding-left: 2px;
+  }
+  
 }
 
 @media (min-width: 1200px) {

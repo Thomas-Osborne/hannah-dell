@@ -30,7 +30,7 @@ export default function Article(props) {
                 }
               <h3 className="article-heading">{props.item.name}</h3>
             </div>
-            <div className="article-links">
+            <div className={`article-links ${props.isCollapsible ? "article-links-pinned" : "article-links-unpinned"}`}>
               {props.item.arxiv && (<a className="article-link" href={props.item.arxiv} target="_blank">(arXiv)</a>)}
               {props.item.pdf && (<a className="article-link" href={`/papers/${props.item.pdf}`} target="_blank">(PDF)</a>)}
             </div>
