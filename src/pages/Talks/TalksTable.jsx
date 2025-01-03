@@ -46,7 +46,7 @@ export default function TalksTable(props) {
           content={generateTableRows(newData, false)} 
           heading={props.heading}
           isCollapsible={props.isCollapsible}
-          tableProportions={[30, 30, 20, 20]}
+          tableProportions={[35, 25, 20, 20]}
         />
       : 
         splitByName(newData, "name").map((itemGroup, index) =>
