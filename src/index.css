@@ -288,15 +288,17 @@ table tr:nth-child(even) {
 }
 
 .article-details {
-  padding-top: 2px;
-}
-
-.article-detail {
-  font-size: 0.8rem;
+  display: flex;
+  padding: 0 2px 4px 2px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .article-abstract-container {
-  padding: 0 8px;
+  padding: 2px 2px 0 2px;
+
+.article-detail {
+  font-size: 0.8rem;
 }
 
 .article-description {
