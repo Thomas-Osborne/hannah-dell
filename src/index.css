@@ -135,13 +135,14 @@ nav a:hover {
 }
 
 .navbar-homename {
-  font-size: 1.375rem;
+  font-size: 1.625rem;
   padding-right: 1rem;
 }
 
 .navbar-link-item {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .nav-content {
@@ -317,8 +318,13 @@ table tr:nth-child(even) {
     justify-content: flex-start;
   }
 
+  .navbar-homename {
+    font-size: 1.375rem;
+  }
+
   .navbar-link-item {
     padding: 0.5rem;
+    font-size: 1rem;
   }
 
   .hamburger-container {
