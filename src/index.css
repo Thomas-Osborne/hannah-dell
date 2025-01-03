@@ -299,7 +299,6 @@ table tr:nth-child(even) {
 }
 
 .article-abstract-container {
-  border: 1px solid red;
   padding: 2px;
 }
 
@@ -308,7 +307,6 @@ table tr:nth-child(even) {
 }
 
 .article-abstract {
-  border: 1px solid blue;
   margin: 0;
 }
 
