@@ -224,9 +224,15 @@ table tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
+.table-button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .table-button {
   all: unset;
   cursor: pointer;
+  font-size: 0.875rem;
 }
 
 .table-container {
