@@ -5,7 +5,7 @@
     "shortName": "Home",
     "path": "home",
     "content": {
-      "html": "<div>\n    <p>\n    I am a postdoc in the <a href=\"https://www.math.uni-bonn.de/\" target=\"_blank\" rel=\"noopener noreferrer\">Mathematical Institute at the University of Bonn</a>, in the working group of <a href=\"https://www.math.uni-bonn.de/~huybrech/\" target=\"_blank\" rel=\"noopener noreferrer\">Daniel Huybrechts</a>. I&#39;m funded by the ERC synergy grant <a href=\"https://www.erc-hyperk.org/\" target=\"_blank\" rel=\"noopener noreferrer\">HyperK</a>.\n    </p>\n\n    <p>I did my PhD at the University of Edinburgh under the supervision of <a href=\"https://www.maths.ed.ac.uk/~abayer/\" target=\"_blank\" rel=\"noopener noreferrer\">Arend Bayer</a>.</p>\n\n    <p><strong>Email:</strong> hdell (at) math (dot) uni-bonn (dot) de</p>\n\n    <p><strong>Address:</strong> Raum 3.003, Endenicher Allee 60, 53115 Bonn</p>\n\n    <p><strong>Pronouns:</strong> she/they</p>\n\n    <h3>Research Interests</h3>\n\n    <p>I am interested in algebraic geometry, in particular derived categories of coherent sheaves, Bridgeland stability conditions, and group actions (on varieties and categories).</p>\n\n    <h3>Other Activities</h3>\n\n    <p>I previously organised <a href=\"https://sites.google.com/view/gaelxxx/home\" target=\"_blank\" rel=\"noopener noreferrer\">GAeL XXX</a> (University of Warwick, July 2023), GAeL XXIX (Université Paris-Saclay, May 2022), and the Edinburgh Geometry seminar (<a href=\"https://hodge.maths.ed.ac.uk/?page_id=36\" target=\"_blank\" rel=\"noopener noreferrer\">EDGE</a>).</p>\n\n    <p>When I&#39;m not doing maths, I like to hike, climb and kayak.</p>\n  </div>",
+      "html": "<div>\n    <p>\n    I am a postdoc in the <a href=\"https://www.math.uni-bonn.de/\" target=\"_blank\" rel=\"noopener noreferrer\">Mathematical Institute at the University of Bonn</a>, in the working group of <a href=\"https://www.math.uni-bonn.de/~huybrech/\" target=\"_blank\" rel=\"noopener noreferrer\">Daniel Huybrechts</a>. I&#39;m funded by the ERC synergy grant <a href=\"https://www.erc-hyperk.org/\" target=\"_blank\" rel=\"noopener noreferrer\">HyperK</a>.\n    </p>\n\n    <p>I did my PhD at the University of Edinburgh under the supervision of <a href=\"https://www.maths.ed.ac.uk/~abayer/\" target=\"_blank\" rel=\"noopener noreferrer\">Arend Bayer</a>.</p>\n\n <p>My CV can be found <a href=\"public\\Hannah_Dell_CV.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>, and my research statement is available upon request.</p> \n\n    <p><strong>Email:</strong> hdell (at) math (dot) uni-bonn (dot) de</p>\n\n    <p><strong>Address:</strong> Raum 3.003, Endenicher Allee 60, 53115 Bonn</p>\n\n    <p><strong>Pronouns:</strong> she/they</p>\n\n    <h3>Research Interests</h3>\n\n    <p>I am interested in algebraic geometry, in particular derived categories of coherent sheaves, Bridgeland stability conditions, and group actions (on varieties and categories).</p>\n\n    <h3>Other Activities</h3>\n\n    <p>I previously organised <a href=\"https://sites.google.com/view/gaelxxx/home\" target=\"_blank\" rel=\"noopener noreferrer\">GAeL XXX</a> (University of Warwick, July 2023), GAeL XXIX (Université Paris-Saclay, May 2022), and the Edinburgh Geometry seminar (<a href=\"https://hodge.maths.ed.ac.uk/?page_id=36\" target=\"_blank\" rel=\"noopener noreferrer\">EDGE</a>).</p>\n\n    <p>When I&#39;m not doing maths, I like to hike, climb and kayak.</p>\n  </div>",
       "image": {
         "path": "/assets/me.jpeg",
         "altText": "Hannah Dell"
@@ -20,7 +20,7 @@
     "shortName": "Talks",
     "path": "talks",
     "content": {
-      "html": "<div>\n <img src=\"/assets/triangulatedcat.jpg\" /> <p>\n <a href=\"https://vimeo.com/926362990/\">Here</a> is a recording of a talk about my thesis project that I give at MSRI in March 2024.</p> <p> <a href=\"https://www.youtube.com/watch?v=JWhMr3MmTvg&list=PLArBKNfJxuumdJkEHO8lYsCOtmJS-FruR&index=10/\">Here</a> is a recording of a 5-minute talk about my cyclic covers project at the Fields Institute.</p></div>",
+      "html": "<div>\n <img src=\"/assets/triangulatedcat.jpg\" alt=\"Hannah at a blackboard with a drawing of a cat made from triangles\"/> <p>\n <a href=\"https://vimeo.com/926362990/\">Here</a> is a recording of a talk about my thesis project that I gave at MSRI in March 2024.</p> <p> <a href=\"https://www.youtube.com/watch?v=JWhMr3MmTvg&list=PLArBKNfJxuumdJkEHO8lYsCOtmJS-FruR&index=10/\">Here</a> is a recording of a 5-minute talk about my cyclic covers project at the Fields Institute.</p></div>",
       "image": {
         "path": "",
         "altText": ""
@@ -35,10 +35,10 @@
     "shortName": "Teaching",
     "path": "teaching",
     "content": {
-      "html": "<div>\n    <p>\n     I teach things like \\(2025 = \\sum_{k=0}^9 k^3 \\) because I love Number Theory!</p>     <p>\n     I am a postdoc in the <a href=\"https://www.math.uni-bonn.de/\">Mathematical Institute at the University of Bonn</a>, in the working group of <a href=\"https://www.math.uni-bonn.de/~huybrech/\">Daniel Huybrechts</a>. I&#39;m funded by the ERC synergy grant <a href=\"https://www.erc-hyperk.org/\">HyperK</a>.\n    </p>\n\n    <p>I did my PhD at the University of Edinburgh under the supervision of <a href=\"https://www.maths.ed.ac.uk/~abayer/\">Arend Bayer</a>.</p>\n\n    <p><strong>Email:</strong> hdell (at) math (dot) uni-bonn (dot) de</p>\n\n    <p><strong>Address:</strong> Raum 3.003, Endenicher Allee 60, 53115 Bonn</p>\n\n    <p><strong>Pronouns:</strong> she/they</p>\n\n    <h3>Research Interests</h3>\n\n    <p>I am interested in algebraic geometry, in particular derived categories of coherent sheaves, Bridgeland stability conditions, and group actions (on varieties and categories).</p>\n  </div>",
+      "html": "",
       "image": {
-        "path": "/assets/me.jpeg",
-        "altText": "Hannah Dell"
+        "path": "",
+        "altText": ""
       }
     },
     "isSpecialPage": true,
@@ -50,7 +50,7 @@
     "shortName": "Travel",
     "path": "travel",
     "content": {
-      "html": "<img src=\"/assets/test.jpg\" />",
+      "html": "",
       "image": {
         "path": "",
         "altText": ""
@@ -65,10 +65,10 @@
     "shortName": "Research",
     "path": "research",
     "content": {
-      "html": "<div>\n    <p>\n    I am a postdoc in the <a href=\"https://www.math.uni-bonn.de/\">Mathematical Institute at the University of Bonn</a>, in the working group of <a href=\"https://www.math.uni-bonn.de/~huybrech/\">Daniel Huybrechts</a>. I&#39;m funded by the ERC synergy grant <a href=\"https://www.erc-hyperk.org/\">HyperK</a>.\n    </p>\n\n    <p>I did my PhD at the University of Edinburgh under the supervision of <a href=\"https://www.maths.ed.ac.uk/~abayer/\">Arend Bayer</a>.</p>\n\n    <p><strong>Email:</strong> hdell (at) math (dot) uni-bonn (dot) de</p>\n\n    <p><strong>Address:</strong> Raum 3.003, Endenicher Allee 60, 53115 Bonn</p>\n\n    <p><strong>Pronouns:</strong> she/they</p>\n\n    <h3>Research Interests</h3>\n\n    <p>I am interested in algebraic geometry, in particular derived categories of coherent sheaves, Bridgeland stability conditions, and group actions (on varieties and categories).</p>\n  </div>",
+      "html": "",
       "image": {
-        "path": "/assets/me.jpeg",
-        "altText": "Hannah Dell"
+        "path": "",
+        "altText": ""
       }
     },
     "isSpecialPage": true,
@@ -80,7 +80,7 @@
     "shortName": "Students",
     "path": "students",
     "content": {
-      "html": "<div>\n    <p>\n    I am a postdoc in the <a href=\"https://www.math.uni-bonn.de/\">Mathematical Institute at the University of Bonn</a>, in the working group of <a href=\"https://www.math.uni-bonn.de/~huybrech/\">Daniel Huybrechts</a>. I&#39;m funded by the ERC synergy grant <a href=\"https://www.erc-hyperk.org/\">HyperK</a>.\n    </p>\n\n    <p>I did my PhD at the University of Edinburgh under the supervision of <a href=\"https://www.maths.ed.ac.uk/~abayer/\">Arend Bayer</a>.</p>\n\n    <p><strong>Email:</strong> hdell (at) math (dot) uni-bonn (dot) de</p>\n\n    <p><strong>Address:</strong> Raum 3.003, Endenicher Allee 60, 53115 Bonn</p>\n\n    <p><strong>Pronouns:</strong> she/they</p>\n\n    <h3>Research Interests</h3>\n\n    <p>I am interested in algebraic geometry, in particular derived categories of coherent sheaves, Bridgeland stability conditions, and group actions (on varieties and categories).</p>\n  </div>",
+      "html": "<div>\n    <p>\n     I teach things like \\(2025 = \\sum_{k=0}^9 k^3 \\) because I love Number Theory!</p> </div>",
       "image": {
         "path": "/assets/me.jpeg",
         "altText": "Hannah Dell"
