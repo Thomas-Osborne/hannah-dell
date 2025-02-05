@@ -51,7 +51,7 @@ export default function App() {
           }
         />
         <Route 
-          path={`/${specialPages.talks.path}`} 
+          path={`${specialPages.talks.path}`} 
           element={
             <>
               <HelmetProvider>
@@ -64,7 +64,7 @@ export default function App() {
           }
         />
         <Route 
-          path={`/${specialPages.teaching.path}`}
+          path={`${specialPages.teaching.path}`}
           element={
             <>
               <HelmetProvider>
@@ -77,7 +77,7 @@ export default function App() {
           }
         />
         <Route 
-          path={`/${specialPages.travel.path}`}
+          path={`${specialPages.travel.path}`}
           element={
             <>
               <HelmetProvider>
@@ -90,7 +90,7 @@ export default function App() {
           }
         />
         <Route 
-          path={`/${specialPages.research.path}`}
+          path={`${specialPages.research.path}`}
           element={
             <>
               <HelmetProvider>
