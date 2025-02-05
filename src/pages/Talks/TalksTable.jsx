@@ -15,7 +15,7 @@ export default function TalksTable(props) {
             {item.notes 
               ?                 
                 <>
-                  {item.name} (<a href={`/notes/${item.notes}`} target="_blank">notes</a>)
+                  {item.name} (<a href={`./notes/${item.notes}`} target="_blank">notes</a>)
                 </> 
               : 
                 item.name
@@ -29,7 +29,7 @@ export default function TalksTable(props) {
             item.seminarName
           )}
         </td>
-        {isHeading && <td>{item.notes && <a href={`/notes/${item.notes}`} target="_blank">Notes</a>}</td>}
+        {isHeading && <td>{item.notes && <a href={`./notes/${item.notes}`} target="_blank">Notes</a>}</td>}
         <td>
           {new Date(item.date).toLocaleString("en-GB", { year: "numeric", month: "long" })}
         </td>

@@ -17,7 +17,7 @@ export default function Intro(props) {
 
   const insertImageInFirstContentElement = () => {
     const image = document.content.image 
-      ? `<img src="${document.content.image.path}" alt="${document.content.image.altText}" class="img-me" />` 
+      ? `<img src="./${document.content.image.path}" alt="${document.content.image.altText}" class="img-me" />` 
       : undefined;
   
     if (document.content.html && document.content.image) {
