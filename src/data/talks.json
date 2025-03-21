@@ -1,5 +1,29 @@
 [
   {
+    "name": "Categorical Torelli for cyclic covers",
+    "date": "2025-03-13",
+    "seminarName": "Hyperkähler Workshop",
+    "seminarUrl": "https://sites.google.com/view/hkmilan2025/home?authuser=0",
+    "location": "Milano",
+    "id": 38
+  },
+  {
+    "name": "Categorical Torelli for cyclic covers",
+    "notes": "DANCE Categorical Torelli Notes.pdf",
+    "date": "2025-03-03",
+    "seminarName": "DANCE Seminar",
+    "seminarUrl": "https://danceseminar.github.io/",
+    "location": "Online",
+    "id": 37
+  },
+  {
+    "name": "Categorical Torelli for cyclic covers",
+    "date": "2025-02-19",
+    "seminarName": "Algebraic Geometry Seminar",
+    "location": "Cambridge",
+    "id": 36
+  },
+  {
     "name": "Stability conditions on free abelian quotients",
     "date": "2023-11-22",
     "seminarName": "Category Theory Seminar",
