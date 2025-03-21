@@ -73,20 +73,5 @@
     },
     "isSpecialPage": true,
     "isOnNavbar": true
-  },
-  { 
-    "id": 5,
-    "name": "Research Students",
-    "shortName": "Students",
-    "path": "students",
-    "content": {
-      "html": "<div>\n    <p>\n     I teach things like \\(2025 = \\sum_{k=0}^9 k^3 \\) because I love Number Theory!</p> </div>",
-      "image": {
-        "path": "/assets/me.jpeg",
-        "altText": "Hannah Dell"
-      }
-    },
-    "isSpecialPage": false,
-    "isOnNavbar": true
   }
 ]
