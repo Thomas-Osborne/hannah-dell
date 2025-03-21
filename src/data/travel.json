@@ -11,7 +11,6 @@
     "url": "https://www.ucl.ac.uk/~ucahbar/wings.html",
     "location": "Chesterfield",
     "date": "2023-04-01",
-    "pinned": true,
     "id": 1
   },  
   {
@@ -47,7 +46,6 @@
     "url": "https://sites.google.com/view/cime-cetraro-hk-summer-school/home?authuser=0",
     "location": "Cetraro",
     "date": "2022-08-01",
-    "pinned": true,
     "id": 6
   },  
   {
@@ -236,6 +234,7 @@
     "url": "https://sites.google.com/view/2025summerinstitute/home",
     "location": "Colorado",
     "date": "2025-07-14",
+    "pinned": true,
     "id": 33
   },
   {
