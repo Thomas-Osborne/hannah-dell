@@ -66,12 +66,12 @@ body p {
 }
 
 body a {
-  color: #ffc233;
+  color: #1174a1;
   text-decoration: underline;
 }
 
 body a:hover {
-  color: #d97d00;
+  color: #1ea1ad;
   transition: all 300ms ease-in-out;
 }
 
