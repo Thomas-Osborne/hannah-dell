@@ -107,11 +107,150 @@
     "id": 14
   },
   {
+    "name": "Queer in Number Theory and Geometry",
+    "url": "https://quings-workshop.github.io/2023/",
+    "location": "Norfolk",
+    "date": "2023-08-01",
+    "id": 15
+  },
+  {
+    "name": "School: K3 surfaces, hyperkähler manifolds, and cubic fourfolds ",
+    "url": "https://www.mathematics.uni-bonn.de/him/programs/past/tp_2023_09#wks3",
+    "location": "Bonn",
+    "date": "2023-09-11",
+    "id": 16
+  },
+  {
+    "name": "Bridgeland stability and complex function theory",
+    "location": "Liverpool",
+    "date": "2023-09-19",
+    "id": 17
+  },
+  {
+    "name": "GLEN Workshop: Stability Conditions",
+    "url": "https://pcwww.liv.ac.uk/~arizzard/GLEN/GLEN2023.html",
+    "location": "Liverpool",
+    "date": "2023-09-21",
+    "id": 18
+  },
+  {
+    "name": "Stability and Enumerative Geometry Workshop (STEW)",
+    "url": "https://www.mn.uio.no/math/english/research/groups/algebra/events/conferences/stew/index.html",
+    "location": "Oslo",
+    "date": "2023-12-11",
+    "id": 19
+  },
+  {
+    "name": "Fano and Hyperkähler Varieties",
+    "url": "https://sites.google.com/view/fanohkingenova/",
+    "location": "Genova",
+    "date": "2024-01-23",
+    "id": 20
+  },
+  {
+    "name": "Mini-Workshop: Artin Groups meet Triangulated Categories",
+    "url": "https://publications.mfo.de/bitstream/handle/mfo/4112/OWR_2024_04.pdf?sequence=4",
+    "location": "Oberwolfach",
+    "date": "2024-02-02",
+    "id": 21
+  },
+  {
+    "name": "SLMath Program: Noncommutative algebraic geometry",
+    "url": "https://www.slmath.org/programs/356",
+    "location": "Berkeley",
+    "date": "2024-03-11",
+    "id": 22
+  },
+  {
+    "name": "Recent developments in noncommutative algebraic geometry",
+    "url": "https://www.slmath.org/workshops/1075",
+    "location": "Berkeley",
+    "date": "2024-04-17",
+    "id": 23
+  },
+  {
+    "name": "Spec(Q¯(2πi))",
+    "url": "http://www.fields.utoronto.ca/activities/23-24/SpecQ",
+    "location": "Toronto",
+    "date": "2024-06-18",
+    "id": 24
+  },
+  {
+    "name": "Mirrors in the Midlands 2024",
+    "url": "https://sites.google.com/view/tylerkelly/past-conferences/mirrors-in-the-midlands-2024",
+    "location": "Birmingham",
+    "date": "2024-08-07",
+    "id": 25
+  },
+  {
+    "name": "Workshop on DT Theory and Derived Categories",
+    "url": "https://sites.google.com/view/dtcats24/",
+    "location": "Paris",
+    "date": "2024-09-12",
+    "id": 26
+  },
+  {
+    "name": "Algebraic Geometry and Noncommutative Projective Varieties",
+    "url": "https://www.mfo.de/occasion/2439b/www_view",
+    "location": "Oberwolfach",
+    "date": "2024-09-22",
+    "id": 27
+  },
+  {
+    "name": "Tale of Geometries",
+    "url": "https://tale-of-geometries.github.io",
+    "location": "Bruxelles",
+    "date": "2024-10-28",
+    "id": 28
+  },
+  {
+    "name": "HyperK Meeting",
+    "url": "https://www.erc-hyperk.org/post/hyperk-meeting-9-10-january-2025",
+    "location": "Bonn",
+    "date": "2025-01-09",
+    "id": 29
+  },
+  {
+    "name": "Northern German Algebraic Geometry Seminar (NOGAGS)",
+    "url": "https://trr358.math.uni-bielefeld.de/workshops/view/426",
+    "location": "Bielefeld",
+    "date": "2025-01-30",
+    "id": 30
+  },
+  {
+    "name": "HK Days",
+    "url": "https://sites.google.com/sheffield.ac.uk/agmp/conferences/hk-days-2025",
+    "location": "Sheffield",
+    "date": "2025-02-12",
+    "id": 31
+  },
+  {
+    "name": "Hyperkähler Workshop",
+    "url": "https://sites.google.com/view/hkmilan2025/home?authuser=0",
+    "location": "Milano",
+    "date": "2025-03-12",
+    "id": 32
+  },
+  {
+    "name": "SRI in Algebraic Geometry (Weeks 1 and 2)",
+    "url": "https://sites.google.com/view/2025summerinstitute/home",
+    "location": "Colorado",
+    "date": "2025-07-14",
+    "id": 33
+  },
+  {
     "name": "CIMPA School: Bridgeland Stability and Applications",
     "url": "https://sites.google.com/view/bridgelandstabilitycimpa/",
     "location": "Florianópolis",
     "date": "2025-08-04",
     "pinned": true,
-    "id": 15
+    "id": 34
+  },
+  {
+    "name": "ÖMG-DMV Meeting: Algebraic geometry and representation theory",
+    "url": "https://www.jku.at/en/faculty-of-engineering-natural-sciences/organization/subject-areas/mathematics/oemg-dmv-2025/",
+    "location": "Linz",
+    "date": "2025-09-01",
+    "id": 35
   }
 ]
