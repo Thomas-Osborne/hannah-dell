@@ -7,7 +7,7 @@ import TeachingTable from '../Teaching/TeachingTable';
 
 export default function Home(props) {
   return (
-    <>
+    <div className="container">
       <Intro name={props.name} />
 
       <Articles pinnedOnly={true} heading="Selected Research Papers" isCollapsible={false}/>
@@ -19,6 +19,6 @@ export default function Home(props) {
       <TeachingTable pinnedOnly={true} heading="Recently Taught Courses" />
 
 
-    </>
+    </ div>
   )
 }
