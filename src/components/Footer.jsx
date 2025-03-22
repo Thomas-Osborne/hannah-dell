@@ -4,13 +4,13 @@ export default function Footer() {
   };
 
   return (
-      <footer className="footer">
-        <div>
-          <p>Created by Tom Osborne, 2025.</p>
-          <button onClick={scrollToTop} className="back-to-top">
-              Back to Top
-          </button>
-        </div>
-      </footer>
+    <footer className="footer">
+      <div>
+        <p>Created by Tom Osborne, 2025.</p>
+        <button onClick={scrollToTop} className="back-to-top">
+            Back to Top
+        </button>
+      </div>
+    </footer>
   );
 };
