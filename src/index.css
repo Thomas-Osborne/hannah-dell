@@ -148,10 +148,9 @@ nav a:hover {
 .navbar-link-item {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1.5rem;
 }
 
-.navbar-active {
+.navbar-item:hover, .navbar-active {
   font-weight: 700;
   text-decoration: underline;
 }
