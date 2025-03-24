@@ -1,7 +1,9 @@
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import { MathJaxContext } from 'better-react-mathjax';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+
+import data from '../data/collaborators.json';
 
 export default function Article(props) {
     
@@ -11,6 +13,55 @@ export default function Article(props) {
       window.MathJax.typeset();
     }
   }, [props.isOpen, props.item.abstract]);
+
+  const showCollaborators = () => {
+    const collaborators = getCollaborators();
+
+    if (!collaborators) return;
+
+    const formattedCollaborators = formatCollaboratorsJsx(collaborators);
+    
+    return concatenateCollaboratorsJsx(formattedCollaborators, "Joint with");
+
+  };
+
+  const getCollaborators = () => {
+    return props.item.collaborators
+      .map(id => data.find(collaborator => collaborator.id === id))
+      .filter(Boolean);
+  };
+  
+  const formatCollaboratorsJsx = (collaborators) => {
+    return collaborators.map(collaborator => 
+      collaborator.url 
+        ? <a key={collaborator.id} href={collaborator.url} target="_blank">{collaborator.name}</a> 
+        : collaborator.name
+    );
+  };
+
+  const concatenateCollaboratorsJsx = (formattedCollaborators, initialString) => {
+    if (formattedCollaborators.length == 1) {
+      return (
+        <h4><em>
+          {initialString} {formattedCollaborators[0]}
+        </em></h4>
+      )
+    }
+
+    if (formattedCollaborators.length == 2) {
+      return (
+        <h4><em>
+          {initialString} {formattedCollaborators[0]} and {formattedCollaborators[1]}
+        </em></h4>
+      )
+    }
+
+    return (
+      <h4><em>
+        Joint with {formattedCollaborators.slice(0, -1).map((item, i) => <Fragment key={i}>{item}, </Fragment>)} and {formattedCollaborators[formattedCollaborators.length - 1]}
+      </em></h4>
+    )
+  }
 
   return (
     <div className="article-container" key={props.item.id}>
@@ -45,8 +96,11 @@ export default function Article(props) {
           </div>
         </div>
         <div className="article-bottom">
-          <div className="article-details">
+          {/* <div className="article-details">
             {props.item.collaborators && <h4><em>Joint with {props.item.collaborators}</em></h4>}
+          </div> */}
+          <div className="article-details">
+            {props.item.collaborators && showCollaborators()}
           </div>
           {props.isOpen &&
             <div className="article-abstract-container">

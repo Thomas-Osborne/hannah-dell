@@ -20,7 +20,7 @@
     "date": "2023-10-20",
     "showYear": true,
     "abstract": "<div>We studied derived categories of cyclic covers, and the question of whether such a cover can be recovered (up to isomorphism) from its Kuznetsov component.</div>",
-    "collaborators": "Augustinas Jacovskis and Franco Rota",
+    "collaborators": [0, 1],
     "journalStatus": "Submitted",
     "journalUrl": "",
     "pinned": true
@@ -33,7 +33,7 @@
     "date": "2023-11-12",
     "showYear": true,
     "abstract": "<div>We investigated how stability conditions behave under actions of fusion categories (=<em>tensor categories with extra structure</em>). A crucial example is that, if a finite group \\(G\\) acts on a category \\(\\mathcal{D}\\), then the corresponding \\(G\\)-equivariant category \\(\\mathcal{D}^G\\) is a module category over \\(\\mathrm{rep}(G)\\) (which is a fusion category). As an application, we generalise results from <a href=\"https://arxiv.org/abs/2307.00815\">my first project</a> to non abelian groups.</div>",
-    "collaborators": "Edmund Heng and Anthony Licata",
+    "collaborators": [2, 3],
     "journalStatus": "Submitted",
     "journalUrl": "",
     "pinned": true
