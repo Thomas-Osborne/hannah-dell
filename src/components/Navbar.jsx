@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="body-container nav-content">
           <NavLink
             to="/"
-            className="navbar-homename"
+            className="navbar-homename navbar-item"
             alt="Home"
           >
             {homeName}

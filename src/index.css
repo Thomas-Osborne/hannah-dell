@@ -88,7 +88,6 @@ body a:hover {
 
 .page-content {
   display: block;
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -104,6 +103,7 @@ body a:hover {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  padding-top: 1rem;
 }
 
 .page-content .img-me {
