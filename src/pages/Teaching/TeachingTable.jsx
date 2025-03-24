@@ -14,7 +14,7 @@ export default function TeachingTable(props) {
         <td>
           {item.courseUrl ? (
             <>
-              <a href={item.courseUrl} target="_blank" rel="noopener noreferrer">{item.name}</a>
+              <a href={item.courseUrl} target="_blank">{item.name}</a>
             </>
           ) : (
             item.name

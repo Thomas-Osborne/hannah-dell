@@ -15,9 +15,20 @@ html, body {
   padding-bottom: 0.375rem;
 }
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container {
+  padding-bottom: 20px;
+}
+
 .body-container {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 body h1, h2, h3, h4, h5, h6 {
@@ -66,12 +77,12 @@ body p {
 }
 
 body a {
-  color: #ffc233;
+  color: #1174a1;
   text-decoration: underline;
 }
 
 body a:hover {
-  color: #d97d00;
+  color: #1ea1ad;
   transition: all 300ms ease-in-out;
 }
 
@@ -96,14 +107,9 @@ body a:hover {
 }
 
 .page-content .img-me {
-  float: right;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  width: 50%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 4px;
-  vertical-align: middle;
+  float: none; /* Disable float for smaller screens */
+  display: block; /* Ensure it's block-level to take full width */
+  width: 100%; /* Make the image take full width */
 }
 
 li {
@@ -202,6 +208,30 @@ nav a:hover {
   opacity: 0;
 }
 
+.footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #212529;
+  padding: 0 0 10px 0;
+}
+
+.footer > * {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.back-to-top {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.back-to-top:hover {
+  color: #ffb300;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -224,22 +254,28 @@ table tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
+.table-button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .table-button {
   all: unset;
   cursor: pointer;
+  font-size: 0.875rem;
 }
 
 .table-container {
   display: block;
   overflow-x: auto;
   width: 100%;
-  padding: 10px 0;
+  padding: 30px 0 0 0;
 }
 
 .article-container {
   width: 100%;
   min-height: 60px;
-  padding: 8px 0 2px 0;
+  padding: 8px 0;
   margin-top: 20px;
   border: 1px solid black;
   background-color: #f2f2f2;
@@ -250,7 +286,7 @@ table tr:nth-child(even) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px 5px 0;
+  padding: 0;
 }
 
 .article-title-button {
@@ -259,12 +295,19 @@ table tr:nth-child(even) {
 }
 
 .article-heading {
-  padding-left: 10px;
-  
+  padding-left: 15px;
 }
 
 .article-links {
-  padding-right: 8px;
+  margin: 0;
+}
+
+.article-links-pinned {
+  padding-left: 50px;
+}
+
+.article-links-unpinned {
+  padding-left: 10px;
 }
 
 .article-info span, .article-info a {
@@ -272,22 +315,26 @@ table tr:nth-child(even) {
   
 }
 
-.article-bottom {
+.article-bottom , .article-details{
   display: flex;
-  padding: 5px 8px 0 8px;
+  padding: 0 10px;
   flex-direction: column;
   justify-content: center;
 }
 
 .article-details {
   display: flex;
-  padding: 0 2px;
+  padding: 0 2px 4px 2px;
   flex-direction: column;
   justify-content: center;
 }
 
 .article-abstract-container {
-  padding: 2px;
+  padding: 2px 2px 0 2px;
+} 
+
+.article-detail {
+  font-size: 0.8rem;
 }
 
 .article-description {
@@ -295,9 +342,8 @@ table tr:nth-child(even) {
 }
 
 .article-abstract {
-  margin: 2px 0;
+  margin: 0;
 }
-
 
 .article-journal {
   padding: 0 5px 0 10px;
@@ -305,7 +351,6 @@ table tr:nth-child(even) {
 }
 
 .article-toggle {
-  min-width: 40px;
   background-color: #212529;
   font-size: 28px;
   border-radius: 16px;
@@ -345,7 +390,14 @@ table tr:nth-child(even) {
 }
 
 @media (min-width: 768px) {
-  .img-me {
+  .page-content .img-me {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+    vertical-align: middle;
     max-width: 290px;
     margin-bottom: 0.5rem;
   }
@@ -360,7 +412,7 @@ table tr:nth-child(even) {
 }
 
 @media (min-width: 992px) {
-  .img-me {
+  .page-content .img-me {
     max-width: 310px;
   }
 
@@ -372,6 +424,11 @@ table tr:nth-child(even) {
     display: inline-flex;
     align-items: center;
   }
+
+  .article-links-unpinned, .article-links-pinned {
+    padding-left: 2px;
+  }
+  
 }
 
 @media (min-width: 1200px) {
