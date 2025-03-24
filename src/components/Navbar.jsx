@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import data from '../data/pages.json';
 
@@ -20,12 +20,13 @@ export default function Navbar() {
     <ul className={`nav-headings ${isHamburgerOpen ? "nav-headings-open-hamburger" : "nav-headings-closed-hamburger"}`}>
       {navbarHeadings.map(heading => (
         <li key={heading.id} className="navbar-link-item">
-          <Link 
+          <NavLink 
             to={`${heading.path.toLowerCase()}`}
+            className={navData => navData.isActive ? "navbar-active" : ""}
             alt={heading.name}
           >
             {heading.shortName}
-          </Link>
+          </NavLink>
         </li>
       ))}
     </ul>
@@ -34,13 +35,13 @@ export default function Navbar() {
   return (
     <nav>
       <div className="body-container nav-content">
-          <Link
+          <NavLink
             to="/"
             className="navbar-homename"
             alt="Home"
           >
             {homeName}
-          </Link>
+          </NavLink>
 
         {/* Hamburger */}
         <div className="hamburger-container">

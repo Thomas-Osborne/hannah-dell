@@ -151,6 +151,11 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
+.navbar-active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .nav-content {
   display: flex;
   align-items: center;
