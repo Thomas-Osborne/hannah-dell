@@ -276,6 +276,10 @@ table tr:nth-child(even) {
   padding: 15px 0;
 }
 
+.articles-container {
+  padding-bottom: 7px;
+}
+
 .article-container {
   width: 100%;
   min-height: 60px;
