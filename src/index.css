@@ -108,9 +108,9 @@ body a:hover {
 }
 
 .page-content .img-me {
-  float: none; /* Disable float for smaller screens */
-  display: block; /* Ensure it's block-level to take full width */
-  width: 100%; /* Make the image take full width */
+  float: none;
+  display: block;
+  width: 100%;
 }
 
 li {
@@ -369,6 +369,39 @@ table tr:nth-child(even) {
   margin-left: 6px;
 }
 
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.page-not-found-text {
+  margin: 20px 0;
+  width: 60%;
+}
+
+.page-not-found-btn-wrapper {
+  width: 40%;
+}
+
+.page-not-found-btn {
+  background-color: #212529;
+  font-size: 1.25em;
+  border-radius: 15px;
+  color: #ffc233;
+  padding: 8px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.page-not-found-btn:hover {
+  cursor: pointer;
+  color: #ffb300;
+}
+
 @media (min-width: 640px) {
 
   nav {
@@ -429,7 +462,6 @@ table tr:nth-child(even) {
 
   .body-container {
     max-width: 710px;
-    border: 1px solid blue;
   }
 
   table td, table th {
