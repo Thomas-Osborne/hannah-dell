@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const homeName = "Hannah Dell";
 
-  const navbarHeadings = data.filter(page => (page.isOnNavbar))
+  const navbarHeadings = data.filter(page => (page.isOnNavbar)).sort((a, b) => a.order - b.order);
 
   const headingNames = (
     <ul className={`nav-headings ${isHamburgerOpen ? "nav-headings-open-hamburger" : "nav-headings-closed-hamburger"}`}>
