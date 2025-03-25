@@ -123,6 +123,7 @@ li {
 nav {
   width: 100%;
   background-color: #212529;
+  padding: 10px 0;
 }
 
 nav li {
@@ -404,7 +405,6 @@ table tr:nth-child(even) {
 }
 
 @media (min-width: 640px) {
-
   nav {
     padding: 0;
   }
