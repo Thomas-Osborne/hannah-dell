@@ -27,7 +27,8 @@
       }
     },
     "isSpecialPage": true,
-    "isOnNavbar": true
+    "isOnNavbar": true,
+    "order": 1
   },
   {
     "id": 2,
@@ -42,7 +43,8 @@
       }
     },
     "isSpecialPage": true,
-    "isOnNavbar": true
+    "isOnNavbar": true,
+    "order": 2
   },
   {
     "id": 3,
@@ -57,7 +59,8 @@
       }
     },
     "isSpecialPage": true,
-    "isOnNavbar": true
+    "isOnNavbar": true,
+    "order": 3
   },
   { 
     "id": 4,

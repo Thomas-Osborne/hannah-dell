@@ -5,19 +5,23 @@ import data from "../data/pages.json";
 export default function Hero(props) {
 
   const location = useLocation();
-  const path = location.pathname.split('/')[1];
+  let path = location.pathname.split('/')[1];
 
-  let pageData;
+  const invalidPageStr = "Page Not Found";
+
+  let page;
   if (path == "") {
-    pageData = data.find(page => page.path === props.homePath);
+    page = data.find(page => page.path === props.homePath);
   } else {
-    pageData = data.find(page => page.path === path);
+    page = data.find(page => page.path === path);
   }
+
+  const name = page ? page.name : invalidPageStr;
   
   return (
-    pageData && <div className="hero">
+    <div className="hero">
       <div className="body-container">
-        <h1 className="hero-heading">{pageData.name}</h1>
+        <h1 className="hero-heading">{name}</h1>
       </div>
     </div>
   )
