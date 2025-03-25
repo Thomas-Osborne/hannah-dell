@@ -362,10 +362,11 @@ table tr:nth-child(even) {
 
 .article-toggle {
   background-color: #212529;
-  font-size: 28px;
-  border-radius: 16px;
+  font-size: 2em;
+  border-radius: 15px;
   color: white;
-  margin: 0 4px;
+  padding: 8px;
+  margin-left: 6px;
 }
 
 @media (min-width: 640px) {
