@@ -22,7 +22,7 @@ export default function Navbar() {
         <li key={heading.id} className="navbar-link-item">
           <NavLink 
             to={`${heading.path.toLowerCase()}`}
-            className={navData => navData.isActive ? "navbar-active navbar-item": "navbar-item"}
+            className={navData => navData.isActive ? "navbar-active navbar-heading navbar-item": "navbar-heading navbar-item"}
             alt={heading.name}
           >
             {heading.shortName}

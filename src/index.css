@@ -142,7 +142,6 @@ nav a:hover {
 
 .navbar-homename {
   font-size: 1.625rem;
-  padding-right: 1rem;
 }
 
 .navbar-link-item {
@@ -150,8 +149,11 @@ nav a:hover {
   padding-bottom: 0.5rem;
 }
 
-.navbar-item:hover, .navbar-active {
+.navbar-heading:hover, .navbar-active {
   font-weight: 700;
+}
+
+.navbar-item:hover, .navbar-active {
   text-decoration: underline;
 }
 
@@ -376,12 +378,21 @@ table tr:nth-child(even) {
     justify-content: flex-start;
   }
 
+  .navbar-item {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    width: 75px;
+    text-align: center;
+  }
+
   .navbar-homename {
     font-size: 1.375rem;
+    width: auto;
   }
 
   .navbar-link-item {
-    padding: 0.5rem;
+    padding: 0.25rem;
     font-size: 1rem;
   }
 
