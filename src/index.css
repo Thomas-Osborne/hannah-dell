@@ -146,8 +146,8 @@ nav a:hover {
 }
 
 .navbar-link-item {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  height: 100%;
 }
 
 .navbar-active {
@@ -437,6 +437,7 @@ table tr:nth-child(even) {
 
   .nav-headings {
     display: flex;
+    gap: 10px;
   }
 
   .headings-without-hamburger {
