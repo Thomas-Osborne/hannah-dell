@@ -197,6 +197,7 @@ nav a:hover {
   overflow: hidden;
   padding: 0;
   margin-left: -28px;
+  font-size: 1.25rem;
 }
 
 .headings-without-hamburger {
