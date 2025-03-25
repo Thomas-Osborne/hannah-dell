@@ -149,11 +149,11 @@ nav a:hover {
   padding-bottom: 0.5rem;
 }
 
-.navbar-heading:hover, .navbar-active {
+.navbar-active {
   font-weight: 700;
 }
 
-.navbar-item:hover, .navbar-active {
+.navbar-item:hover {
   text-decoration: underline;
 }
 
