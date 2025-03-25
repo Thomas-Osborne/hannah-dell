@@ -429,6 +429,7 @@ table tr:nth-child(even) {
 
   .body-container {
     max-width: 710px;
+    border: 1px solid blue;
   }
 
   table td, table th {
