@@ -29,6 +29,7 @@ html, body {
 .body-container {
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
 }
 
 body h1, h2, h3, h4, h5, h6 {
@@ -146,7 +147,6 @@ nav a:hover {
 .navbar-link-item {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border: 1px solid red;
 }
 
 .navbar-heading:hover, .navbar-active {
@@ -464,6 +464,7 @@ table tr:nth-child(even) {
 
 @media (min-width: 1400px) {
   .body-container {
-    max-width: 1300px;
+    max-width: 1380px;
   }
 }
+
