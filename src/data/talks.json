@@ -5,6 +5,7 @@
     "seminarName": "AGNT Seminar",
     "seminarUrl": "https://pub.math.leidenuniv.nl/~strengtc/calendar/",
     "location": "Leiden",
+    "pinned": true,
     "id": 41
   },
   {
@@ -13,6 +14,7 @@
     "seminarName": "NCTS Seminar in Algebraic Geometry",
     "seminarUrl": "https://ncts.ntu.edu.tw/events_seminars_detail.php?gid=371&nnid=2885",
     "location": "Taipei/Online",
+    "pinned": true,
     "id": 40
   },
   {
