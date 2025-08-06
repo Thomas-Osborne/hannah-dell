@@ -23,7 +23,6 @@ export default function App() {
 
   const specialPages = specialPageNames.reduce((acc, pageName) => {
     const pageData = data.find((page) => page.name === pageName);
-    console.log(pageData)
     if (pageData) {
       acc[pageName.toLowerCase()] = pageData;
     }
