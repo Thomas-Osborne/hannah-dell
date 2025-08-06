@@ -23,6 +23,7 @@ export default function App() {
 
   const specialPages = specialPageNames.reduce((acc, pageName) => {
     const pageData = data.find((page) => page.name === pageName);
+    console.log(pageData)
     if (pageData) {
       acc[pageName.toLowerCase()] = pageData;
     }
@@ -104,7 +105,7 @@ export default function App() {
               </>
             }
           />
-
+          
           {/* Non-special pages with generic layout generated via json. */}
           {regularPages.map(page => (
             <Route

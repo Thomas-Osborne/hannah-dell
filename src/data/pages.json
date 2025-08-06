@@ -76,5 +76,20 @@
     },
     "isSpecialPage": true,
     "isOnNavbar": true
+  },
+  { 
+  "id": 5,
+  "name": "CIMPA 2025",
+  "shortName": "CIMPA",
+  "path": "cimpa2025",
+  "content": {
+    "html": "<div>\n    <p>\n    These are my lecture notes for the course I am giving at CIMPA 2025: Bridgeland Stability and Applications at Universidade Federal de Santa Catarina, Florianópolis, Brazil, during 11-14 August 2025.</p>\n <p>Lecture notes will be updated after each lecture.</p>\n\n<p>This page will be updated in more detail after the end of the event.</p>  </div>",
+    "image": {
+      "path": "",
+      "altText": ""
+    }
+  },
+  "isSpecialPage": false,
+  "isOnNavbar": true
   }
 ]
