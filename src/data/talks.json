@@ -1,10 +1,37 @@
 [
   {
+    "name": "Stability conditions on free quotients",
+    "date": "2025-05-14",
+    "seminarName": "AGNT Seminar",
+    "seminarUrl": "https://pub.math.leidenuniv.nl/~strengtc/calendar/",
+    "location": "Leiden",
+    "pinned": true,
+    "id": 41
+  },
+  {
+    "name": "Categorical Torelli for cyclic covers",
+    "date": "2025-04-25",
+    "seminarName": "NCTS Seminar in Algebraic Geometry",
+    "seminarUrl": "https://ncts.ntu.edu.tw/events_seminars_detail.php?gid=371&nnid=2885",
+    "location": "Taipei/Online",
+    "pinned": true,
+    "id": 40
+  },
+  {
+    "name": "Stability conditions on free quotients",
+    "date": "2025-01-16",
+    "seminarName": "MPI Oberseminar",
+    "seminarUrl": "https://www.mpim-bonn.mpg.de/node/158",
+    "location": "Bonn",
+    "id": 39
+  },
+  {
     "name": "Categorical Torelli for cyclic covers",
     "date": "2025-03-13",
     "seminarName": "Hyperkähler Workshop",
     "seminarUrl": "https://sites.google.com/view/hkmilan2025/home?authuser=0",
     "location": "Milano",
+    "pinned": true,
     "id": 38
   },
   {

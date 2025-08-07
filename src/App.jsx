@@ -104,7 +104,7 @@ export default function App() {
               </>
             }
           />
-
+          
           {/* Non-special pages with generic layout generated via json. */}
           {regularPages.map(page => (
             <Route
