@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+
 import data from '../data/pages.json';
 
-export default function Navbar() {
+export default function Navbar({ darkMode, toggleDarkMode }) {
 
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const location = useLocation();
@@ -35,13 +38,13 @@ export default function Navbar() {
   return (
     <nav>
       <div className="body-container nav-content">
-          <NavLink
-            to="/"
-            className="navbar-homename navbar-item"
-            alt="Home"
-          >
-            {homeName}
-          </NavLink>
+        <NavLink
+          to="/"
+          className="navbar-homename navbar-item"
+          alt="Home"
+        >
+          {homeName}
+        </NavLink>
 
         {/* Hamburger */}
         <div className="hamburger-container">
@@ -57,9 +60,23 @@ export default function Navbar() {
         </div>
 
         {/* Headings without hamburger */}
+        <div>
         <div className="headings-without-hamburger">
           {headingNames}
         </div>
+        </div>
+
+        {/* Dark Mode Button */}
+        <button
+          className="darkmode-button"
+          onClick={toggleDarkMode}
+        >
+          {darkMode ? (
+            <FontAwesomeIcon icon={faSun} />
+          ) : (
+            <FontAwesomeIcon icon={faMoon} />
+          )}
+        </button>
       </div>
 
       {/* Headings with hamburger */}

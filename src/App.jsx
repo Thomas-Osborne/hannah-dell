@@ -1,5 +1,5 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import Footer from './components/Footer';
@@ -17,6 +17,8 @@ import data from './data/pages.json';
 
 export default function App() {
 
+  const [darkMode, setDarkMode] = useState(false);
+
   const regularPages = data.filter(page => !page.isSpecialPage);
 
   const specialPageNames = ["Home", "Talks", "Teaching", "Travel", "Research"]
@@ -29,10 +31,19 @@ export default function App() {
     return acc;
   }, {});
 
+  const toggleDarkMode = () => {
+    setDarkMode(prevDarkMode => !prevDarkMode);
+  };
+
+  // Update CSS root class based on darkMode value.
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', darkMode);
+  }, [darkMode]);
+
   return (
     <BrowserRouter>
       <div className="flex-wrapper">
-        <Navbar />
+        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
         <Hero homePath={`${specialPages.home.path}`}/>
         <Routes>
           <Route 
