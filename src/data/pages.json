@@ -79,6 +79,21 @@
   },
   { 
   "id": 5,
+  "name": "Courses",
+  "shortName": "Courses",
+  "path": "courses",
+  "content": {
+    "html": "",
+    "image": {
+      "path": "",
+      "altText": ""
+    }
+  },
+  "isSpecialPage": true,
+  "isOnNavbar": true
+  },
+  { 
+  "id": 6,
   "name": "CIMPA 2025",
   "shortName": "CIMPA",
   "path": "cimpa2025",

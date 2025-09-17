@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
+import CourseInfo from './pages/Courses/CourseInfo';
+import Courses from './pages/Courses/Courses';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Home from './pages/Home/Home';
@@ -19,7 +21,7 @@ export default function App() {
 
   const regularPages = data.filter(page => !page.isSpecialPage);
 
-  const specialPageNames = ["Home", "Talks", "Teaching", "Travel", "Research"]
+  const specialPageNames = ["Home", "Talks", "Teaching", "Travel", "Research", "Courses"]
 
   const specialPages = specialPageNames.reduce((acc, pageName) => {
     const pageData = data.find((page) => page.name === pageName);
@@ -104,6 +106,20 @@ export default function App() {
               </>
             }
           />
+          <Route 
+            path={`${specialPages.courses.path}`}
+            element={
+              <>
+                <HelmetProvider>
+                  <Helmet>
+                    <title>{specialPages.courses.shortName} - Hannah Dell</title>
+                  </Helmet>
+                </HelmetProvider>
+                <Courses name={specialPages.courses.name}/>
+              </>
+            }
+          />
+          <Route path="/courses/:path" element={<CourseInfo />} />
           
           {/* Non-special pages with generic layout generated via json. */}
           {regularPages.map(page => (
