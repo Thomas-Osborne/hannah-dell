@@ -20,8 +20,7 @@
               "name": "Notes",
               "url": "/assets/cimpa2025/lecture1.pdf"
             }
-          ],
-          "homework": null
+          ]
         },
         {
           "week": "Lecture 2",
@@ -33,8 +32,7 @@
               "name": "Notes",
               "url": "/assets/cimpa2025/lecture2.pdf"
             }
-          ],
-          "homework": null
+          ]
         },
         {
           "week": "Lecture 3",
@@ -46,8 +44,7 @@
               "name": "Notes",
               "url": "/assets/cimpa2025/lecture3.pdf"
             }
-          ],
-          "homework": null
+          ]
         },
         {
           "week": "Lecture 4",
@@ -59,8 +56,7 @@
               "name": "Notes",
               "url": "/assets/cimpa2025/lecture4.pdf"
             }
-          ],
-          "homework": null
+          ]
         },
         {
           "week": "Lecture 5",
@@ -72,8 +68,7 @@
               "name": "Notes",
               "url": "/assets/cimpa2025/lecture5.pdf"
             }
-          ],
-          "homework": null
+          ]
         }
       ]
     }
