@@ -1,14 +1,14 @@
 [
   {
     "id": 0,
-    "name": "Stability Conditions on Free Abelian Quotients",
+    "name": "Stability conditions on free abelian quotients",
     "date": "2023-07-03",
     "showYear": true,
     "arxiv": "https://arxiv.org/abs/2307.00815",
-    "pdf": "2307.00815v2.pdf",
+    "pdf": "epiga_vol9_Dell.pdf",
     "abstract": "<div>In my first project, I studied the stability manifold of (smooth projective) surfaces which are free abelian quotients. One approach is via group actions on triangulated categories, another is via Le Potier functions.</div>",
     "collaborators": "",
-    "journalStatus": "To appear in Épijournal de Géométrie Algébrique",
+    "journalStatus": "Épijournal Géom. Algébr. 9 (2025), Art. 16",
     "journalUrl": "",
     "pinned": true
   },
@@ -21,21 +21,21 @@
     "showYear": true,
     "abstract": "<div>We studied derived categories of cyclic covers, and the question of whether such a cover can be recovered (up to isomorphism) from its Kuznetsov component.</div>",
     "collaborators": [0, 1],
-    "journalStatus": "Submitted",
-    "journalUrl": "",
+    "journalStatus": "IMRN 2025, Issue 10",
+    "journalUrl": "https://academic.oup.com/imrn/article-abstract/2025/10/rnaf120/8138019",
     "pinned": true
   },
   {
     "id": 2,
     "name": "Fusion-equivariant stability conditions and Morita duality",
     "arxiv": "https://arxiv.org/abs/2311.06857",
-    "pdf": "2311.06857v2.pdf",
+    "pdf": "s00209-025-03838-z.pdf",
     "date": "2023-11-12",
     "showYear": true,
     "abstract": "<div>We investigated how stability conditions behave under actions of fusion categories (=<em>tensor categories with extra structure</em>). A crucial example is that, if a finite group \\(G\\) acts on a category \\(\\mathcal{D}\\), then the corresponding \\(G\\)-equivariant category \\(\\mathcal{D}^G\\) is a module category over \\(\\mathrm{rep}(G)\\) (which is a fusion category). As an application, we generalise results from <a href=\"https://arxiv.org/abs/2307.00815\">my first project</a> to non abelian groups.</div>",
     "collaborators": [2, 3],
-    "journalStatus": "Submitted",
-    "journalUrl": "",
+    "journalStatus": "Math. Z. 311, 48 (2025)",
+    "journalUrl": "https://link.springer.com/article/10.1007/s00209-025-03838-z",
     "pinned": true
   },
   {

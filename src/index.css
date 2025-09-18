@@ -371,6 +371,12 @@ table tr:nth-child(even) {
   margin-left: 6px;
 }
 
+.course-bullet li {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 .page-not-found {
   display: flex;
   flex-direction: column;
