@@ -519,6 +519,10 @@ table tr:nth-child(even) {
   .headings-with-hamburger {
     display: none;
   }
+
+  .hamburger-button {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -540,10 +544,6 @@ table tr:nth-child(even) {
 
   table td, table th {
     min-width: 220px;
-  }
-
-  .hamburger-button {
-    display: none;
   }
 }
 

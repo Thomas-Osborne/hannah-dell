@@ -20,8 +20,10 @@ export default function TeachingTable(props) {
           ) : (
             item.name
           )}
+        </td>
+        <td>
           {item.courseUrl && (
-            <> (<a href={item.courseUrl} target="_blank" rel="noopener noreferrer">official page</a>)</>
+            <> <a href={item.courseUrl} target="_blank" rel="noopener noreferrer">↗</a></>
           )}
         </td>
         <td>
@@ -52,7 +54,7 @@ export default function TeachingTable(props) {
             content={generateTableRows(itemGroup, true)}
             heading={itemGroup[0].location}
             isCollapsible={props.isCollapsible}
-            tableProportions={[65, 35]}
+            tableProportions={[65, 5, 30]}
           />
         )
   )
