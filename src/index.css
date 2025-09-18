@@ -56,6 +56,10 @@ html, body {
   justify-content: flex-start;
 }
 
+.flex-grow {
+  flex: 1;
+}
+
 .container {
   padding-bottom: 20px;
 }
@@ -198,6 +202,12 @@ nav a:hover {
   justify-content: space-between; 
 }
 
+.navbar-utils {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .nav-headings-open-hamburger {
   display: block;
 }
@@ -215,6 +225,7 @@ nav a:hover {
   all: unset;
   color: var(--color-primary);
   cursor: pointer;
+  display: block;
 }
 
 .hamburger-button:hover {
@@ -237,6 +248,7 @@ nav a:hover {
 
 .headings-without-hamburger {
   display: none;
+  flex-grow: 1;
   margin-left: -20px;
 }
 
@@ -265,18 +277,19 @@ nav a:hover {
 }
 
 .darkmode-button:hover {
-  background-color: var(--color-primary);
-  color: var(--text-light);
-}
+  color: var(--color-primary)};
 
 .footer {
   margin-top: auto;
   width: 100%;
-  background-color: var(--color-secondary);
-  padding: 0 0 10px 0;
 }
 
-.footer > * {
+.footer-container {
+  background-color: var(--color-secondary);
+  padding: 5px 0 5px 0;
+}
+
+.footer-container > * {
   color: var(--text-light);
   font-size: 0.8rem;
   text-align: center;
@@ -521,6 +534,10 @@ table tr:nth-child(even) {
 
   table td, table th {
     min-width: 220px;
+  }
+
+  .hamburger-button {
+    display: none;
   }
 }
 
