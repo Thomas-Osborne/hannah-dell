@@ -37,10 +37,10 @@ export default function TeachingTable(props) {
     props.pinnedOnly
       ? 
         <Table
-          content={generateTableRows(newData)} 
+          content={generateTableRows(newData, false)} 
           heading={props.heading}
           isCollapsible={props.isCollapsible}
-          tableProportions={[60, 20, 20]}
+          tableProportions={[65, 30, 5]}
         />
       : 
         splitByName(newData, "location").map((itemGroup, index) => 
