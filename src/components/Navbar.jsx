@@ -37,6 +37,7 @@ export default function Navbar() {
           <li key={heading.id} className="navbar-link-item">
             <NavLink
               to={`/${isCourse ? `courses/${path.toLowerCase()}` : path.toLowerCase()}`}
+              end // so that Courses and Course Page don't both bold at "/courses/course-name"
               className={navData =>
                 navData.isActive
                   ? "navbar-active navbar-heading navbar-item"
