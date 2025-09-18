@@ -9,7 +9,7 @@ export default function TeachingTable(props) {
   
   const newData = props.pinnedOnly ? data.filter(item => item.pinned) : data;
 
-  const generateTableRows = (data, isHeading) => data.map(item => {
+  const generateTableRows = (data) => data.map(item => {
     return (
       <tr key={item.id}>
         <td>
@@ -22,18 +22,13 @@ export default function TeachingTable(props) {
           )}
         </td>
         <td>
+          {item.dateText}
+        </td>
+        <td>
           {item.courseUrl && (
             <> <a href={item.courseUrl} target="_blank" rel="noopener noreferrer">↗</a></>
           )}
         </td>
-        <td>
-          {item.dateText}
-        </td>
-        {!isHeading && 
-          <td>
-            {item.location}
-          </td>
-        }
       </tr>
     )
   })
@@ -42,7 +37,7 @@ export default function TeachingTable(props) {
     props.pinnedOnly
       ? 
         <Table
-          content={generateTableRows(newData, false)} 
+          content={generateTableRows(newData)} 
           heading={props.heading}
           isCollapsible={props.isCollapsible}
           tableProportions={[60, 20, 20]}
@@ -54,7 +49,7 @@ export default function TeachingTable(props) {
             content={generateTableRows(itemGroup, true)}
             heading={itemGroup[0].location}
             isCollapsible={props.isCollapsible}
-            tableProportions={[65, 5, 30]}
+            tableProportions={[65, 30, 5]}
           />
         )
   )
