@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-import data from '../data/pages.json';
+import pageData from '../data/pages.json';
+import courseData from '../data/courses.json';
 
 export default function Navbar() {
 
@@ -14,21 +15,46 @@ export default function Navbar() {
 
   const homeName = "Hannah Dell";
 
-  const navbarHeadings = data.filter(page => (page.isOnNavbar)).sort((a, b) => a.order - b.order);
+  const pageHeadings = pageData.
+    filter(page => (page.isOnNavbar))
+    .sort((a, b) => a.order - b.order);
+  
+  const courseHeadings = courseData
+    .filter(course => 
+      course.isOnNavbar &&
+      course.lectures &&
+      course.lectures.path
+    )
+    .sort((a, b) => a.order - b.order);
 
-  const headingNames = (
+    const generateNavLinks = (headings, isCourse = false) => (
+      headings.map(heading => {
+        const path = isCourse
+          ? heading.lectures?.path
+          : heading.path;
+
+        return (
+          <li key={heading.id} className="navbar-link-item">
+            <NavLink
+              to={`/${isCourse ? `courses/${path.toLowerCase()}` : path.toLowerCase()}`}
+              className={navData =>
+                navData.isActive
+                  ? "navbar-active navbar-heading navbar-item"
+                  : "navbar-heading navbar-item"
+              }
+              alt={heading.name}
+            >
+              {heading.shortName}
+            </NavLink>
+          </li>
+        );
+      })
+    );
+  
+  const navbarHeadings = (
     <ul className={`nav-headings ${isHamburgerOpen ? "nav-headings-open-hamburger" : "nav-headings-closed-hamburger"}`}>
-      {navbarHeadings.map(heading => (
-        <li key={heading.id} className="navbar-link-item">
-          <NavLink 
-            to={`${heading.path.toLowerCase()}`}
-            className={navData => navData.isActive ? "navbar-active navbar-heading navbar-item": "navbar-heading navbar-item"}
-            alt={heading.name}
-          >
-            {heading.shortName}
-          </NavLink>
-        </li>
-      ))}
+      {generateNavLinks(pageHeadings)}
+      {generateNavLinks(courseHeadings, true)}
     </ul>
   )
 
@@ -58,7 +84,7 @@ export default function Navbar() {
 
         {/* Headings without hamburger */}
         <div className="headings-without-hamburger">
-          {headingNames}
+          {navbarHeadings}
         </div>
       </div>
 
@@ -66,7 +92,7 @@ export default function Navbar() {
       <div
         className={`headings-with-hamburger body-container ${isHamburgerOpen ? "hamburger-open" : "hamburger-closed"}`}
       >
-        {headingNames}
+        {navbarHeadings}
       </div>
 
     </nav>

@@ -1,7 +1,9 @@
 [
   {
     "id": "1",
+    "isOnNavbar": true,
     "name":"CIMPA 2025",
+    "shortName": "CIMPA 2025",
     "courseUrl": "https://sites.google.com/view/bridgelandstabilitycimpa/",
     "date": "2025-08-11",
     "dateText": "11-15th August 2025",

@@ -91,20 +91,5 @@
   },
   "isSpecialPage": true,
   "isOnNavbar": true
-  },
-  { 
-  "id": 6,
-  "name": "CIMPA 2025",
-  "shortName": "CIMPA",
-  "path": "cimpa2025",
-  "content": {
-    "html": "<div>\n    <p>\n    These are my lecture notes for the course I am giving at the CIMPA school: Bridgeland Stability and Applications at Universidade Federal de Santa Catarina, Florianópolis, Brazil, during 11-15th August 2025.</p>\n <p>Notes: <a href=\"https://drive.google.com/drive/folders/1gBYZ1643Znl9beMSHNWKrfodHyY9GZ3o?usp=sharing/\" target=\"_blank\">Geometric stability conditions and group actions</a></p>\n\n<p>These notes will be updated daily, and this page will be updated with more details after the event.</p>  </div>",
-    "image": {
-      "path": "",
-      "altText": ""
-    }
-  },
-  "isSpecialPage": false,
-  "isOnNavbar": true
   }
 ]
