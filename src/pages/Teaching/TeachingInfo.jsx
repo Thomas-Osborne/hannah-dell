@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
-import data from '../../data/courses.json';
+import data from '../../data/teaching.json';
 import NotFound from '../../components/NotFound';
 
-export default function CourseDetailPage() {
+export default function TeachingInfo() {
   const { path } = useParams();
   const course = data.find(c => c.lectures && c.lectures.path === path);
 

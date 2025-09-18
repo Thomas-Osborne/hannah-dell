@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import pageData from '../data/pages.json';
-import courseData from '../data/courses.json';
+import teachingData from '../data/teaching.json';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -21,7 +21,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
     filter(page => (page.isOnNavbar))
     .sort((a, b) => a.order - b.order);
   
-  const courseHeadings = courseData
+  const teachingHeadings = teachingData
     .filter(course => 
       course.isOnNavbar &&
       course.lectures &&
@@ -38,7 +38,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
         return (
           <li key={heading.id} className="navbar-link-item">
             <NavLink
-              to={`/${isCourse ? `courses/${path.toLowerCase()}` : path.toLowerCase()}`}
+              to={`/${isCourse ? `teaching/${path.toLowerCase()}` : path.toLowerCase()}`}
               end // so that Courses and Course Page don't both bold at "/courses/course-name"
               className={navData =>
                 navData.isActive
@@ -57,14 +57,13 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
   const navbarHeadings = (
     <ul className={`nav-headings ${isHamburgerOpen ? "nav-headings-open-hamburger" : "nav-headings-closed-hamburger"}`}>
       {generateNavLinks(pageHeadings)}
-      {generateNavLinks(courseHeadings, true)}
+      {generateNavLinks(teachingHeadings, true)}
     </ul>
   );
 
   return (
     <nav>
       <div className="body-container nav-content">
-        {/* Left: site name */}
         <NavLink
           to="/"
           className="navbar-homename navbar-item"

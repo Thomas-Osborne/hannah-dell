@@ -76,20 +76,5 @@
     },
     "isSpecialPage": true,
     "isOnNavbar": true
-  },
-  { 
-  "id": 5,
-  "name": "Courses",
-  "shortName": "Courses",
-  "path": "courses",
-  "content": {
-    "html": "",
-    "image": {
-      "path": "",
-      "altText": ""
-    }
-  },
-  "isSpecialPage": true,
-  "isOnNavbar": true
   }
 ]

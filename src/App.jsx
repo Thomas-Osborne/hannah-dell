@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import CourseInfo from './pages/Courses/CourseInfo';
-import Courses from './pages/Courses/Courses';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Home from './pages/Home/Home';
@@ -13,6 +11,7 @@ import NotFound from './components/NotFound';
 import Research from './pages/Research/Research';
 import Talks from './pages/Talks/Talks';
 import Teaching from './pages/Teaching/Teaching';
+import TeachingInfo from './pages/Teaching/TeachingInfo';
 import Travel from './pages/Travel/Travel';
 
 import data from './data/pages.json';
@@ -92,6 +91,7 @@ export default function App() {
                 </>
               }
             />
+            <Route path="/teaching/:path" element={<TeachingInfo />} />
             <Route 
               path={`${specialPages.travel.path}`}
               element={
@@ -117,21 +117,7 @@ export default function App() {
                   <Research name={specialPages.research.name}/>
                 </>
               }
-            />
-          <Route 
-            path={`${specialPages.courses.path}`}
-            element={
-              <>
-                <HelmetProvider>
-                  <Helmet>
-                    <title>{specialPages.courses.shortName} - Hannah Dell</title>
-                  </Helmet>
-                </HelmetProvider>
-                <Courses name={specialPages.courses.name}/>
-              </>
-            }
-          />
-          <Route path="/courses/:path" element={<CourseInfo />} />
+            />        
             
             {/* Non-special pages with generic layout generated via json. */}
             {regularPages.map(page => (
