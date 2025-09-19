@@ -91,6 +91,19 @@ export default function App() {
                 </>
               }
             />
+            <Route 
+              path={`${specialPages.teaching.path}/:path`}
+              element={
+                <>
+                  <HelmetProvider>
+                    <Helmet>
+                      <title>{specialPages.teaching.shortName} - Hannah Dell</title>
+                    </Helmet>
+                  </HelmetProvider>
+                  <TeachingInfo />
+                </>
+              }
+            />
             <Route path="/teaching/:path" element={<TeachingInfo />} />
             <Route 
               path={`${specialPages.travel.path}`}
