@@ -14,12 +14,15 @@ export default function TeachingInfo() {
         <p></p>
         <h2>{course.name}</h2>
         {course.courseUrl ? (
-          <em>
-            {course.dateText}, {course.location}{" "}
-            <a href={course.courseUrl} target="_blank" rel="noopener noreferrer">
-              (Official Course Page)
-            </a>
-          </em>
+          <div className="course-intro-container">
+            <em>
+              {course.dateText}, {course.location}{" "}
+            </em>
+            
+            <strong><a href={course.courseUrl} target="_blank" rel="noopener noreferrer">
+              Official Course Page
+            </a></strong>
+          </div>
           ) : (
             <em>
               {course.dateText} ({course.location})

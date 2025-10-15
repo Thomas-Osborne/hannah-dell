@@ -449,6 +449,13 @@ table tr:nth-child(even) {
   margin: 0;
 }
 
+.course-intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .page-not-found {
   display: flex;
   flex-direction: column;
@@ -571,6 +578,11 @@ table tr:nth-child(even) {
     padding-left: 2px;
   }
   
+  .course-intro-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1200px) {
