@@ -18,7 +18,10 @@ import data from './data/pages.json';
 
 export default function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved === "true" ? true : false;
+  });
 
   const regularPages = data.filter(page => !page.isSpecialPage);
 
@@ -39,6 +42,7 @@ export default function App() {
   // Update CSS root class based on darkMode value.
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
   return (
