@@ -1,6 +1,7 @@
 import data from '../../data/teaching.json';
 import { splitByName } from '../../utils/dataUtils';
 import Table from '../../components/Table';
+import { Link } from 'react-router-dom';
 
 export default function TeachingTable(props) {
 
@@ -12,12 +13,15 @@ export default function TeachingTable(props) {
     return (
       <tr key={item.id}>
         <td>
-          {item.courseUrl ? (
-            <>
-              <a href={item.courseUrl} target="_blank">{item.name}</a>
-            </>
+          {item.lectures?.path ? (
+            <Link to={`./${item.lectures.path}`}>
+              {item.name}
+            </Link>
           ) : (
             item.name
+          )}
+          {item.courseUrl && (
+            <> (<a href={item.courseUrl} target="_blank" rel="noopener noreferrer">↗</a>)</>
           )}
         </td>
         <td>
