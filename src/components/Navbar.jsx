@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-import data from '../data/pages.json';
+import pageData from '../data/pages.json';
+import teachingData from '../data/teaching.json';
 
-export default function Navbar() {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
+export default function Navbar({ darkMode, toggleDarkMode }) {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const location = useLocation();
 
@@ -14,61 +17,109 @@ export default function Navbar() {
 
   const homeName = "Hannah Dell";
 
-  const navbarHeadings = data.filter(page => (page.isOnNavbar)).sort((a, b) => a.order - b.order);
+  const pageHeadings = pageData.
+    filter(page => (page.isOnNavbar))
+    .sort((a, b) => a.order - b.order);
+  
+  const teachingHeadings = teachingData
+    .filter(course => 
+      course.isOnNavbar &&
+      course.lectures &&
+      course.lectures.path
+    )
+    .sort((a, b) => a.order - b.order);
 
-  const headingNames = (
+    const generateNavLinks = (headings, isCourse = false) => (
+      headings.map(heading => {
+        const path = isCourse
+          ? heading.lectures?.path
+          : heading.path;
+
+        return (
+          <li key={heading.id} className="navbar-link-item">
+            <NavLink
+              to={`/${isCourse ? `teaching/${path.toLowerCase()}` : path.toLowerCase()}`}
+              end // so that Courses and Course Page don't both bold at "/courses/course-name"
+              className={navData =>
+                navData.isActive
+                  ? "navbar-active navbar-heading navbar-item"
+                  : "navbar-heading navbar-item"
+              }
+              alt={heading.name}
+            >
+              {heading.shortName}
+            </NavLink>
+          </li>
+        );
+      })
+    );
+  
+  const navbarHeadings = (
     <ul className={`nav-headings ${isHamburgerOpen ? "nav-headings-open-hamburger" : "nav-headings-closed-hamburger"}`}>
-      {navbarHeadings.map(heading => (
-        <li key={heading.id} className="navbar-link-item">
-          <NavLink 
-            to={`${heading.path.toLowerCase()}`}
-            className={navData => navData.isActive ? "navbar-active navbar-heading navbar-item": "navbar-heading navbar-item"}
-            alt={heading.name}
-          >
-            {heading.shortName}
-          </NavLink>
-        </li>
-      ))}
+      {generateNavLinks(pageHeadings)}
+      {generateNavLinks(teachingHeadings, true)}
     </ul>
-  )
+  );
 
   return (
     <nav>
       <div className="body-container nav-content">
-          <NavLink
-            to="/"
-            className="navbar-homename navbar-item"
-            alt="Home"
-          >
-            {homeName}
-          </NavLink>
+        <NavLink
+          to="/"
+          className="navbar-homename navbar-item"
+          alt="Home"
+        >
+          {homeName}
+        </NavLink>
 
-        {/* Hamburger */}
-        <div className="hamburger-container">
-          <button 
+        <div className="headings-without-hamburger">{navbarHeadings}</div>
+
+        <div className="navbar-utils">
+          {/* Hamburger (mobile only) */}
+          <button
             className="hamburger-button"
             onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
-            alt="Open Navbar"
+            aria-label="Open Navbar"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="hamburger">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="hamburger"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
-        </div>
 
-        {/* Headings without hamburger */}
-        <div className="headings-without-hamburger">
-          {headingNames}
+          {/* Dark mode button */}
+          <button
+            className="darkmode-button"
+            onClick={toggleDarkMode}
+            aria-label="Toggle Dark Mode"
+          >
+            {darkMode ? (
+              <FontAwesomeIcon icon={faSun} />
+            ) : (
+              <FontAwesomeIcon icon={faMoon} />
+            )}
+          </button>
         </div>
       </div>
 
-      {/* Headings with hamburger */}
+      {/* Hamburger headings */}
       <div
-        className={`headings-with-hamburger body-container ${isHamburgerOpen ? "hamburger-open" : "hamburger-closed"}`}
+        className={`headings-with-hamburger body-container ${
+          isHamburgerOpen ? "hamburger-open" : "hamburger-closed"
+        }`}
       >
-        {headingNames}
+        {navbarHeadings}
       </div>
-
     </nav>
-  )
+  );
 }

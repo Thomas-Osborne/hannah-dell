@@ -22,7 +22,6 @@ export default function Table(props) {
     ))
   : null;
 
-
   return (
     <>
     {props.content && props.content.length > 0 && (
