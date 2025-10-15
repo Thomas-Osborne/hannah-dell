@@ -99,9 +99,10 @@
     "description": "These are my lecture notes for the course I gave at the CIMPA school: Bridgeland Stability and Applications at Universidade Federal de Santa Catarina, Florianópolis, Brazil, during 11-15th August 2025.",
     "lectures": {
         "path": "cimpa2025",
+        "weekName": "lecture",
         "data": [
         {
-          "week": "Lecture 1",
+          "week": 1,
           "date": "2025-08-11",
           "topic": "Motivation and overview; geometric stability conditions on surfaces",
           "materials": [
@@ -113,7 +114,7 @@
           ]
         },
         {
-          "week": "Lecture 2",
+          "week": 2,
           "date": "2025-08-12",
           "topic": "Equivariant categories",
           "materials": [
@@ -125,7 +126,7 @@
           ]
         },
         {
-          "week": "Lecture 3",
+          "week": 3,
           "date": "2025-08-13",
           "topic": "Interlude: Questions and exercises",
           "materials": [
@@ -137,7 +138,7 @@
           ]
         },
         {
-          "week": "Lecture 4",
+          "week": 4,
           "date": "2025-08-14",
           "topic": "Equivariant stability conditions",
           "materials": [
@@ -149,7 +150,7 @@
           ]
         },
         {
-          "week": "Lecture 5",
+          "week": 5,
           "date": "2025-08-15",
           "topic": "Free quotients; where next?",
           "materials": [

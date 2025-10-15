@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { toFirstLetterUpperCase } from '../../utils/stringUtils';
 import data from '../../data/teaching.json';
 import NotFound from '../../components/NotFound';
 
@@ -37,7 +38,7 @@ export default function TeachingInfo() {
                 <tbody>
                   {course.lectures.data.map(lecture => (
                     <tr key={lecture.week}>
-                      <td>{lecture.week}</td>
+                      <td>{course.lectures.weekName ? `${toFirstLetterUpperCase(course.lectures.weekName)} ${lecture.week}` : lecture.week}</td>
                       <td>{lecture.date}</td>
                       <td>{lecture.topic}</td>
                       <td>
