@@ -19,7 +19,7 @@ The data `json` files located at `src/json` can be used to update the pages of t
 
 #### Special pages
 
-**Talks**, **Teaching**, **Travel** and **Research** are special pages with predetermined layouts; table entries and article summaries can be . For each row/article, set `pinned` to `true` in the respective `json` file for it to appear on the homepage.
+**Talks**, **Teaching**, **Travel** and **Research** are special pages with predetermined layouts; table entries and article summaries can be modified using their corresponding `json` files in the `src/data` directory. For each row/article, set `pinned` to `true` in the respective `json` file for it to appear on the homepage.
 
 The **Teaching** pages have an additional option to add lecture course information. Here a description attribute can be added to the document, as well as the `lectures` field. The `lectures` field consists of a path name for users to reach the page at `/teaching/path-name-here`. A table of lectures can then be provided, along with as many materials for each lecture (such as notes, homework, other sources...) for each lecture/week/whatever you want! Such course pages can also be pinned to the navbar by setting the `isOnNavbar` attribute to true.
 
