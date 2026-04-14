@@ -48,5 +48,16 @@
     "journalStatus": "Read on Edinburgh Research Archive",
     "journalUrl": "https://era.ed.ac.uk/handle/1842/42288",
     "pinned": false
+  },
+  {
+    "id": 4,
+    "name": "Coherent sheaves in logarithmic geometry",
+    "arxiv": "https://arxiv.org/abs/2604.05053",
+    "pdf": "2604.05053v1.pdf",
+    "date": "2026-04-06",
+    "showYear": true,
+    "abstract": "<div>A ubiquitous strategy in algebraic geometry is to study a complicated geometric object by degenerating it to a union of simpler objects. This leads to the basic question: How can we recover geometric information about a variety, its coherent sheaves, and its derived category from their degenerations? Logarithmic geometry is a suite of tools for studying certain degenerations. In this project, we developed a theory of logarithmic coherent sheaves. In a follow-up paper, we will also study the associated logarithmic derived category.</div>",
+    "collaborators": [4, 5, 6, 7],
+    "pinned": true
   }
 ]
