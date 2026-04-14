@@ -18,5 +18,25 @@
     "id": 3,
     "name": "Anthony Licata",
     "url": "https://maths-people.anu.edu.au/~licatat/Home.html"
+  },
+  {
+    "id": 4,
+    "name": "Xianyu Hu",
+    "url": "https://www.math.cit.tum.de/en/algebra/personen/xianyu-hu/"
+  },
+  {
+    "id": 5,
+    "name": "Patrick Kennedy-Hunt",
+    "url": "https://www.patrickkennedyhunt.com"
+  },
+  {
+    "id": 6,
+    "name": "Kabeer Manali Rahul",
+    "url": "https://kabeermr.github.io"
+  },
+  {
+    "id": 7,
+    "name": "Maximilian Schimpf",
+    "url": "https://sites.google.com/view/max-schimpf"
   }
 ]
